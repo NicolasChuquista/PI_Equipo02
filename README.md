@@ -30,21 +30,21 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   </tr>
 
   <tr>
-    <td><img src="img/foto1.jpeg"></td>
+    <td><img width="200" src="img/foto1.jpeg"></td>
     <td>Nicolás Genaro Chuqista Rivadeneira</td>
     <td>Líder del equipo</td>
     <td>Innovación social, sostenibilidad</td>
   </tr>
 
   <tr>
-    <td><img src="img/foto3.jpg"></td>
+    <td><img width="200" src="img/foto3.jpg"></td>
     <td>Tomás del Castillo Mogollón</td>
     <td>Responsable de investigación</td>
     <td>Gestión ambiental, Bioremediación</td>
   </tr>
 
   <tr>
-    <td><img src="img/foto2.jpeg"></td>
+    <td><img width="200" src="img/foto2.jpeg"></td>
     <td>Raúl Enrique Jauregui Penny</td>
     <td>Diseñador/a</td>
     <td>Bioeconomía, Gestión de Proyecto</td>
