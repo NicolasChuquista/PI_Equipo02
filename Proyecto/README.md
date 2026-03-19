@@ -13,4 +13,6 @@ Tiene como propósito construir infraestructuras resilientes, promover la indust
 *Idea 1: 
 
 Monitor de consumo para edificio universitario (recomendado)
-"Los gestores del campus universitario no tienen visibilidad del consumo eléctrico en tiempo real por área, lo que impide identificar desperdicios y justificar inversión en paneles solares."
+"Los gestores del campus universitario no tienen visibilidad del consumo eléctrico en tiempo real por área, lo que impide identificar desperdicios y justificar inversión en paneles solares." - Dispositivo con ESP32 + sensor de corriente que mide el consumo eléctrico de un edificio o aula en tiempo real, envía los datos por WiFi y los muestra en un dashboard web. Permite identificar desperdicios y calcular CO₂ evitado.
+
+
