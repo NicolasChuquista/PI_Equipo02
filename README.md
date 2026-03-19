@@ -18,3 +18,45 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
 - Se orienta a construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible, y fomentar la innovación. Se centra en modernizar la tecnología de los sectores industriales, aumentar la investigación científica y mejorar el acceso de las pequeñas empresas a servicios financieros.
 
 ## 📸 Fotografía del Equipo>
+<h2>👥 Integrantes del Equipo</h2>
+
+<table>
+  <tr>
+    <th>Foto</th>
+    <th>Nombre</th>
+    <th>Rol</th>
+    <th>Intereses</th>
+  </tr>
+
+  <tr>
+    <td><img src="https://via.placeholder.com/80" alt="foto"></td>
+    <td>Nicolás Genaro Chuqista Rivadeneira</td>
+    <td>Líder del equipo</td>
+    <td>Innovación social, sostenibilidad</td>
+  </tr>
+
+  <tr>
+    <td><img src="https://via.placeholder.com/80" alt="foto"></td>
+    <td>Tomás del Castillo Mogollón</td>
+    <td>Responsable de investigación</td>
+    <td>Gestión ambiental, Bioremediación</td>
+  </tr>
+
+  <tr>
+    <td><img src="https://via.placeholder.com/80" alt="foto"></td>
+    <td>Raúl Enrique Jauregui Penny</td>
+    <td>Diseñador/a</td>
+    <td>Bioeconomía, Gestión de Proyecto</td>
+  </tr>
+
+  <tr>
+    <td><img src="https://via.placeholder.com/80" alt="foto"></td>
+    <td>Nombre 4</td>
+    <td>Encargado/a de documentación</td>
+    <td>Comunicación científica, redacción técnica</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
