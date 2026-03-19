@@ -18,41 +18,6 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
 - Se orienta a construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible, y fomentar la innovación. Se centra en modernizar la tecnología de los sectores industriales, aumentar la investigación científica y mejorar el acceso de las pequeñas empresas a servicios financieros.
 
 ## 📸 Fotografía del Equipo>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Equipo 02</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    img {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  </style>
-</head>
-
-<body>
 
 <h2>👥 Integrantes del Equipo</h2>
 
