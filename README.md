@@ -43,7 +43,7 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   </tr>
 
   <tr>
-    <td><img src="img/foto2.jp2g" alt="Foto integrante"></td>
+    <td><img src="img/foto2.jpeg" alt="Foto integrante"></td>
     <td>Raúl Enrique Jauregui Penny</td>
     <td>Diseñador/a</td>
     <td>Bioeconomía, Gestión de Proyecto</td>
