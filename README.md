@@ -46,15 +46,15 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   <tr>
     <td><img width="200" src="img/foto2.jpeg"></td>
     <td>Raúl Enrique Jauregui Penny</td>
-    <td>Diseñador/a</td>
+    <td>Diseñador</td>
     <td>Bioeconomía, Gestión de Proyecto</td>
   </tr>
 
   <tr>
-    <td><img src="https://via.placeholder.com/80" alt="foto"></td>
-    <td>Nombre 4</td>
-    <td>Encargado/a de documentación</td>
-    <td>Comunicación científica, redacción técnica</td>
+    <td><img width="200" src="img/foto4.jpeg"></td>
+    <td>Flavio Francisco Rabanal Bravo</td>
+    <td>Encargado de documentación</td>
+    <td>Economía Circular, Biotecnología</td>
   </tr>
 
 </table>
