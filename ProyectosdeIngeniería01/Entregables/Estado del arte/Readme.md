@@ -1,11 +1,13 @@
 # Estado del Arte
-ESTADO DEL ARTE
-Sistema de Gestión Inteligente de Energía Solar con
-Priorización Automática de Cargas e IoT
-Proyecto SolarGrid
+
+Sistema de Gestión Inteligente de Energía Solar con Priorización Automática de Cargas e IoT Proyecto SolarGrid
+
 Carrera	Ingeniería Ambiental
+
 ODS vinculados	ODS 7 — Energía asequible y no contaminante
+
 Nivel	Pregrado — Trabajo Final de Carrera / Tesis
+
 Año	2025 – 2026
  
 Índice
