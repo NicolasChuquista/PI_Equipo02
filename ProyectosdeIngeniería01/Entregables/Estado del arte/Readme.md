@@ -1,18 +1,19 @@
 # Estado del Arte
 
-Sistema de Gestión Inteligente de Energía Solar con Priorización Automática de Cargas e IoT Proyecto SolarGrid
+## Sistema de Gestión Inteligente de Energía Solar con Priorización Automática de Cargas e IoT Proyecto SolarGrid
 
-Carrera	Ingeniería Ambiental
+## Carrera	Ingeniería Ambiental
 
-ODS vinculados	ODS 7 — Energía asequible y no contaminante
-
-Nivel	Pregrado — Trabajo Final de Carrera / Tesis
-
-Año	2025 – 2026
+## ODS vinculados	ODS 7 — Energía asequible y no contaminante
  
-Índice
-1. Introducción y contextualización del problema
-2. Marco conceptual: electrificación rural off-grid
+## 1. Introducción y contextualización del problema
+El acceso a la energía eléctrica representa uno de los pilares fundamentales del desarrollo humano sostenible. Según el Banco Mundial, al inicio del presente siglo más de seis millones de peruanos residentes en zonas rurales carecían de acceso a electricidad, lo que equivalía al 30% de la población nacional. Esta situación impulsó al Estado peruano a lanzar el Plan Nacional de Electrificación Rural (PNER), que a través de múltiples fases instaló sistemas solares fotovoltaicos domiciliarios (SFD) en comunidades sin acceso a la red eléctrica convencional.
+
+Sin embargo, la instalación masiva de SFD ha evidenciado una limitación estructural: los sistemas solares instalados funcionan de manera ciega, sin capacidad de monitoreo remoto, sin gestión inteligente de la energía almacenada y sin priorización automática de cargas. El organismo regulador OSINERGMIN constató que en revisiones realizadas en sistemas fotovoltaicos de programas públicos, una fracción significativa de los equipos inspeccionados se encontraba inoperativa o funcionando deficientemente, no por falla del panel fotovoltaico, sino por agotamiento prematuro de baterías producto de una gestión inadecuada de la energía disponible.
+
+Ante este diagnóstico, emerge la necesidad de desarrollar un sistema de control inteligente que permita maximizar el aprovechamiento de la energía solar generada, proteger la vida útil de las baterías mediante algoritmos de seguimiento del punto de máxima potencia (MPPT) y priorizar las cargas eléctricas según criterios de importancia socioeconómica para la comunidad, todo ello con conectividad IoT que permita el monitoreo remoto a bajo costo. Esta es precisamente la propuesta de valor del sistema SolarGrid, cuyo fundamento técnico se desarrolla en el presente estado del arte.
+
+## 2. Marco conceptual: electrificación rural off-grid
 3. Algoritmos MPPT y control de carga solar
 4. Sistemas IoT para monitoreo de energía fotovoltaica
 5. Gestión inteligente de cargas y priorización
@@ -23,9 +24,7 @@ Año	2025 – 2026
 10. Referencias bibliográficas
  
 1. Introducción y contextualización del problema
-El acceso a la energía eléctrica representa uno de los pilares fundamentales del desarrollo humano sostenible. Según el Banco Mundial, al inicio del presente siglo más de seis millones de peruanos residentes en zonas rurales carecían de acceso a electricidad, lo que equivalía al 30% de la población nacional. Esta situación impulsó al Estado peruano a lanzar el Plan Nacional de Electrificación Rural (PNER), que a través de múltiples fases instaló sistemas solares fotovoltaicos domiciliarios (SFD) en comunidades sin acceso a la red eléctrica convencional.
-Sin embargo, la instalación masiva de SFD ha evidenciado una limitación estructural: los sistemas solares instalados funcionan de manera ciega, sin capacidad de monitoreo remoto, sin gestión inteligente de la energía almacenada y sin priorización automática de cargas. El organismo regulador OSINERGMIN constató que en revisiones realizadas en sistemas fotovoltaicos de programas públicos, una fracción significativa de los equipos inspeccionados se encontraba inoperativa o funcionando deficientemente, no por falla del panel fotovoltaico, sino por agotamiento prematuro de baterías producto de una gestión inadecuada de la energía disponible.
-Ante este diagnóstico, emerge la necesidad de desarrollar un sistema de control inteligente que permita maximizar el aprovechamiento de la energía solar generada, proteger la vida útil de las baterías mediante algoritmos de seguimiento del punto de máxima potencia (MPPT) y priorizar las cargas eléctricas según criterios de importancia socioeconómica para la comunidad, todo ello con conectividad IoT que permita el monitoreo remoto a bajo costo. Esta es precisamente la propuesta de valor del sistema SolarGrid, cuyo fundamento técnico se desarrolla en el presente estado del arte.
+
 
 2. Marco conceptual: electrificación rural off-grid
 2.1 Sistemas fotovoltaicos aislados (off-grid)
