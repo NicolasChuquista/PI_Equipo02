@@ -1,10 +1,10 @@
 # Estado del Arte
 
-## Sistema de Gestión Inteligente de Energía Solar con Priorización Automática de Cargas e IoT Proyecto SolarGrid
+Sistema de Gestión Inteligente de Energía Solar con Priorización Automática de Cargas e IoT Proyecto SolarGrid
 
-## Carrera	Ingeniería Ambiental
+Carrera	Ingeniería Ambiental
 
-## ODS vinculados	ODS 7 — Energía asequible y no contaminante
+ODS vinculados	ODS 7 — Energía asequible y no contaminante
  
 ## 1. Introducción y contextualización del problema
 El acceso a la energía eléctrica representa uno de los pilares fundamentales del desarrollo humano sostenible. Según el Banco Mundial, al inicio del presente siglo más de seis millones de peruanos residentes en zonas rurales carecían de acceso a electricidad, lo que equivalía al 30% de la población nacional. Esta situación impulsó al Estado peruano a lanzar el Plan Nacional de Electrificación Rural (PNER), que a través de múltiples fases instaló sistemas solares fotovoltaicos domiciliarios (SFD) en comunidades sin acceso a la red eléctrica convencional.
