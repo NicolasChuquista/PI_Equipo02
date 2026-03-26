@@ -337,47 +337,79 @@ Un sistema como SolarGrid, que extiende la vida útil de la batería mediante ge
 <p align="center">
   Hecho con ☀️ para comunidades rurales del Perú &nbsp;|&nbsp; ODS 7 — Energía Asequible y No Contaminante
 </p>
+---
 
-💡 La solución: SolarGrid
-¿Qué problema resuelve?
-En el Perú hay más de 205,000 sistemas solares instalados en comunidades rurales. La mayoría funciona de forma ciega: el panel carga la batería, la batería alimenta todo, y nadie sabe cuándo se va a acabar la energía ni cuándo la batería está a punto de dañarse por sobredescarga. Resultado: sistemas que se rompen antes de tiempo, familias sin luz y dinero público desperdiciado.
-SolarGrid resuelve eso con electrónica de bajo costo.
+## 💡 La solución: SolarGrid
 
-¿Qué es SolarGrid en una línea?
+### ¿Qué problema resuelve?
 
-Un cerebro electrónico que se conecta a cualquier sistema solar existente, decide qué cargas encender según cuánta energía hay disponible, y avisa al dueño por el celular si algo falla — todo por menos de $150 USD.
+En el Perú hay más de **205,000 sistemas solares instalados** en comunidades rurales. La mayoría funciona de forma ciega: el panel carga la batería, la batería alimenta todo, y nadie sabe cuándo se va a acabar la energía ni cuándo la batería está a punto de dañarse por sobredescarga. Resultado: sistemas que se rompen antes de tiempo, familias sin luz y dinero público desperdiciado.
 
+**SolarGrid resuelve eso con electrónica de bajo costo.**
 
-¿Cómo funciona?
-El sistema tiene tres funciones que trabajan juntas en tiempo real:
-1. Extrae la máxima energía del panel (MPPT)
-Un algoritmo corre en el ESP32 cada pocos segundos. Lee el voltaje y la corriente del panel, y ajusta el convertidor DC-DC para que el panel siempre opere en su punto óptimo. Esto recupera entre 10% y 30% más de energía comparado con un controlador convencional.
-2. Decide qué cargas activar según la energía disponible
+---
+
+### ¿Qué es SolarGrid en una línea?
+
+> Un cerebro electrónico que se conecta a cualquier sistema solar existente, decide qué cargas encender según cuánta energía hay disponible, y avisa al dueño por el celular si algo falla — todo por menos de $150 USD.
+
+---
+
+### ¿Cómo funciona?
+
+El sistema tiene **tres funciones que trabajan juntas en tiempo real:**
+
+#### 1. Extrae la máxima energía del panel (MPPT)
+Un algoritmo corre en el ESP32 cada pocos segundos. Lee el voltaje y la corriente del panel, y ajusta el convertidor DC-DC para que el panel siempre opere en su punto óptimo. Esto recupera entre **10% y 30% más de energía** comparado con un controlador convencional.
+
+#### 2. Decide qué cargas activar según la energía disponible
 Las cargas del hogar se organizan en tres niveles de prioridad:
+
+```
 Energía disponible alta   →  Nivel 1 + Nivel 2 + Nivel 3 activos
 Energía media             →  Nivel 1 + Nivel 2 activos
 Energía baja              →  Solo Nivel 1 activo
 Batería crítica           →  Todo desconectado (protección)
-NivelEjemplosSe activa cuando...🟢 CríticoLuz LED, radioSiempre que haya energía mínima🟡 ImportanteVentilador, carga de celularBatería > 50%🔵 DiferibleTV, otrosBatería > 75% y hay excedente solar
-Esto extiende la vida útil de la batería porque nunca se descarga por debajo del límite seguro.
-3. Monitorea y alerta en tiempo real
+```
 
-Sube datos a la nube (ThingSpeak) vía WiFi cada 30 segundos
-Si no hay WiFi, manda SMS vía módulo GSM (SIM800L) cuando detecta batería baja o falla del panel
-Muestra voltaje, corriente y estado en una pantalla OLED local
+| Nivel | Ejemplos | Se activa cuando... |
+|---|---|---|
+| 🟢 **Crítico** | Luz LED, radio | Siempre que haya energía mínima |
+| 🟡 **Importante** | Ventilador, carga de celular | Batería > 50% |
+| 🔵 **Diferible** | TV, otros | Batería > 75% y hay excedente solar |
 
+Esto **extiende la vida útil de la batería** porque nunca se descarga por debajo del límite seguro.
 
-¿Qué lo hace diferente?
-Controladores comercialesSolarGridPrecio$120–300 USD$110–150 USDMPPT✅✅App / WiFiSolo Bluetooth o requiere hardware extra✅ WiFi nativoPriorización de cargas❌ Solo ON/OFF general✅ 3 niveles automáticosAlertas sin WiFi (SMS)❌✅ via SIM800LAdaptado a Perú rural❌✅
-La innovación no está en inventar nueva electrónica — está en el algoritmo de decisión que combina el estado de la batería, la generación solar y la prioridad de cada carga para tomar decisiones automáticas que hoy ningún controlador sub-$200 hace.
+#### 3. Monitorea y alerta en tiempo real
+- Sube datos a la nube (ThingSpeak) vía **WiFi** cada 30 segundos
+- Si no hay WiFi, manda **SMS** vía módulo GSM (SIM800L) cuando detecta batería baja o falla del panel
+- Muestra voltaje, corriente y estado en una pantalla **OLED** local
 
-¿Cuál es el impacto?
+---
 
-🔋 Baterías que duran más: al nunca sobredescargarlas, su vida útil se puede extender entre 1 y 2 años adicionales
-💡 Cargas críticas siempre disponibles: luz y radio nunca se cortan aunque la energía baje
-📲 Diagnóstico remoto: un técnico puede ver el estado del sistema desde Lima sin viajar a la comunidad
-💰 Menor costo que la competencia con más funciones que cualquier dispositivo en el mismo rango de precio
+### ¿Qué lo hace diferente?
 
+| | Controladores comerciales | SolarGrid |
+|---|---|---|
+| Precio | $120–300 USD | $110–150 USD |
+| MPPT | ✅ | ✅ |
+| App / WiFi | Solo Bluetooth o requiere hardware extra | ✅ WiFi nativo |
+| Priorización de cargas | ❌ Solo ON/OFF general | ✅ 3 niveles automáticos |
+| Alertas sin WiFi (SMS) | ❌ | ✅ via SIM800L |
+| Adaptado a Perú rural | ❌ | ✅ |
+
+La innovación **no está en inventar nueva electrónica** — está en el **algoritmo de decisión** que combina el estado de la batería, la generación solar y la prioridad de cada carga para tomar decisiones automáticas que hoy ningún controlador sub-$200 hace.
+
+---
+
+### ¿Cuál es el impacto?
+
+- 🔋 **Baterías que duran más:** al nunca sobredescargarlas, su vida útil se puede extender entre 1 y 2 años adicionales
+- 💡 **Cargas críticas siempre disponibles:** luz y radio nunca se cortan aunque la energía baje
+- 📲 **Diagnóstico remoto:** un técnico puede ver el estado del sistema desde Lima sin viajar a la comunidad
+- 💰 **Menor costo que la competencia** con más funciones que cualquier dispositivo en el mismo rango de precio
+
+---
 
 <p align="center">
   <b>SolarGrid</b> — Más energía. Más control. Para quienes más lo necesitan.
