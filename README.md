@@ -17,7 +17,6 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
 3. ODS 9: Industria, Innovación e Infraestructura
 - Se orienta a construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible, y fomentar la innovación. Se centra en modernizar la tecnología de los sectores industriales, aumentar la investigación científica y mejorar el acceso de las pequeñas empresas a servicios financieros.
 
-## 📸 Fotografía del Equipo>
 
 <h2>👥 Integrantes del Equipo</h2>
 
