@@ -155,9 +155,9 @@ Alianzas para desarrollo
 Jefes de hogar en:
 
 ```
-Comunidades rurales
-Comunidades periurbanas
-Zonas sin red de agua potable segura
+- Comunidades rurales
+- Comunidades periurbanas
+- Zonas sin red de agua potable segura
 ```
 
 Beneficios:
