@@ -40,28 +40,28 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
   <tr>
     <td><img width="200" src="img/foto1.jpeg"></td>
     <td>Nicolás Genaro Chuqista Rivadeneira</td>
-    <td> Líder </td>
+    <td> Líder General y de Diseño </td>
     <td>Innovación social, sostenibilidad</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto3.jpg"></td>
     <td>Tomás del Castillo Mogollón</td>
-    <td> Encargado de Diseño </td>
+    <td> Líder de Tecnología </td>
     <td>Gestión ambiental, Bioremediación</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto2.jpeg"></td>
     <td>Raúl Enrique Jauregui Penny</td>
-    <td> Encargado de Documentación </td>
+    <td> Líder ESG </td>
     <td>Bioeconomía, Gestión de Proyecto</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto4.jpeg"></td>
     <td>Flavio Francisco Rabanal Bravo</td>
-    <td> Encargado de Investigación </td>
+    <td> Líder de investigación y operaciones </td>
     <td>Economía Circular, Biotecnología</td>
   </tr>
 
