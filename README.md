@@ -6,17 +6,26 @@ Universidad Peruana Cayetano Heredia
 Somos el Equipo 02 del curso Proyectos de Ingeniería 2026-1, conformado por estudiantes de la carrera de Ingeniería Ambiental.
 Nuestro objetivo es aplicar la metodología de diseño para generar soluciones innovadoras con impacto social, tecnológico y ambiental.
 
-## Nos interesa trabajar en los siguientes Objetivos de Desarrollo Sostenible (ODS):
+## 🎯 Alineación con los Objetivos de Desarrollo Sostenible (ODS)
 
-1. ODS 3: Salud y Bienestar - Meta 3.9
-- Reducir considerablemente el número de muertes y enfermedades causadas por productos químicos peligrosos y la contaminación del aire, el agua y el suelo.
+El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones tecnológicas para abordar desafíos críticos en salud y saneamiento. Nuestras metas específicas son:
 
-2. ODS 6: Agua Limpia y Saneamiento - Meta 6.1
-- Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos.
+### 🏥 ODS 3: Salud y Bienestar
+> **Meta 3.9:** Reducir considerablemente el número de muertes y enfermedades causadas por productos químicos peligrosos y la contaminación del aire, el agua y el suelo.
 
-3. ODS 9: Industria, Innovación e Infraestructura - Meta 9.1
-- Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad para apoyar el desarrollo económico y el bienestar humano.
+* **Aplicación:** El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada.
 
+### 💧 ODS 6: Agua Limpia y Saneamiento
+> **Meta 6.1:** Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos.
+
+* **Aplicación:** Democratizamos el monitoreo de calidad de agua. Al reducir el costo operativo frente a equipos industriales, permitimos que comunidades rurales tengan una herramienta de vigilancia asequible y técnica.
+
+### 🏗️ ODS 9: Industria, Innovación e Infraestructura
+> **Meta 9.1:** Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad para apoyar el desarrollo económico y el bienestar humano.
+
+* **Aplicación:** Convertimos un recipiente de almacenamiento tradicional en una **infraestructura digital inteligente** (IoT), fortaleciendo la resiliencia tecnológica en zonas con acceso limitado a servicios básicos.
+
+---
 
 <h2>👥 Integrantes del Equipo</h2>
 
