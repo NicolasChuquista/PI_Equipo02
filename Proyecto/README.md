@@ -7,13 +7,12 @@ En diversas zonas alejadas y periurbanas, muchas familias se ven obligadas a rec
 Esta situación evidencia una falta de cumplimiento de las recomendaciones de la OMS y de las normas nacionales vigentes, como el DS N° 031-2010-SA (Reglamento de la Calidad del Agua para Consumo Humano) en el territorio peruano.
 
 ## 💡 La Solución
-AquaBalde es un recipiente inteligente creado para evaluar el agua almacenada. Funciona sobre un balde de doble pared hecho de polietileno de alta densidad (HDPE) apto para alimentos. El equipo integra sensores ópticos y electroquímicos de muy bajo consumo.
+AquaBalde es un recipiente inteligente creado para evaluar el agua almacenada. Funciona sobre un balde de doble fondo hecho de polietileno de alta densidad (HDPE) apto para alimentos. El equipo integra sensores electroquímicos de muy bajo consumo.
 
 No es necesario ser un experto para usarlo: una vez que se llena el balde, el dispositivo analiza el líquido y en menos de un minuto indica de forma clara si es APTA o NO APTA para el consumo.
 
 ### ⚙️ Características Principales
-* **Interfaz Intuitiva:** La información se muestra en una pantalla OLED de 1.3" y se apoya en un semáforo de luces LED RGB.
-* **Diseño Seguro:** Cuenta con cierre hermético y sus componentes electrónicos están protegidos contra el agua (certificación IP67) entre las paredes del recipiente para evitar contaminación cruzada.
+* **Interfaz Intuitiva:** La información se muestra en una pantalla OLED de 1.3" y se apoya en un "semáforo" de luces LED RGB.
 * **Autonomía y Economía:** Opera con una batería recargable de 3000mAh y no requiere pagos mensuales.
 ## 📊 Parámetros Evaluados
 El dispositivo utiliza una lógica basada en los límites de salud pública. El resultado solo será "APTA" si todos los valores están dentro de lo permitido:
