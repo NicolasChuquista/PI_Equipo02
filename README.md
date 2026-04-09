@@ -16,7 +16,7 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
 * **Aplicación:** El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada.
 
 <p align="center">
-  <img src="img/3.9.png" width="200" alt="Icono ODS 3.9">
+  <img src="img/3.9.png" width="100" alt="Icono ODS 3.9">
 </p>
 
 ### 💧 ODS 6: Agua Limpia y Saneamiento
@@ -24,14 +24,18 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
 
 * **Aplicación:** Democratizamos el monitoreo de calidad de agua. Al reducir el costo operativo frente a equipos industriales, permitimos que comunidades rurales tengan una herramienta de vigilancia asequible y técnica.
 
-    <td><img width="200" src="img/6.1.png"></td>
+<p align="center">
+  <img src="img/6.1.png" width="100" alt="Icono ODS 6.1">
+</p>
 
 ### 🏗️ ODS 9: Industria, Innovación e Infraestructura
 > **Meta 9.1:** Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad para apoyar el desarrollo económico y el bienestar humano.
 
 * **Aplicación:** Convertimos un recipiente de almacenamiento tradicional en una infraestructura digital inteligente (IoT), fortaleciendo la resiliencia tecnológica en zonas con acceso limitado a servicios básicos.
 
-    <td><img width="200" src="img/9.1.png"></td>
+<p align="center">
+  <img src="img/9.1.png" width="100" alt="Icono ODS 9.1">
+</p>
 
 ---
 
