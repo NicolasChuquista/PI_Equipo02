@@ -23,7 +23,7 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
 ### 🏗️ ODS 9: Industria, Innovación e Infraestructura
 > **Meta 9.1:** Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad para apoyar el desarrollo económico y el bienestar humano.
 
-* **Aplicación:** Convertimos un recipiente de almacenamiento tradicional en una **infraestructura digital inteligente** (IoT), fortaleciendo la resiliencia tecnológica en zonas con acceso limitado a servicios básicos.
+* **Aplicación:** Convertimos un recipiente de almacenamiento tradicional en una infraestructura digital inteligente (IoT), fortaleciendo la resiliencia tecnológica en zonas con acceso limitado a servicios básicos.
 
 ---
 
