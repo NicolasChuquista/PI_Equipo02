@@ -38,21 +38,21 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   <tr>
     <td><img width="200" src="img/foto3.jpg"></td>
     <td>Tomás del Castillo Mogollón</td>
-    <td>Responsable de investigación</td>
+    <td>Diseño</td>
     <td>Gestión ambiental, Bioremediación</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto2.jpeg"></td>
     <td>Raúl Enrique Jauregui Penny</td>
-    <td>Diseñador</td>
+    <td>Documentación</td>
     <td>Bioeconomía, Gestión de Proyecto</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto4.jpeg"></td>
     <td>Flavio Francisco Rabanal Bravo</td>
-    <td>Encargado de documentación</td>
+    <td>Investigación</td>
     <td>Economía Circular, Biotecnología</td>
   </tr>
 
