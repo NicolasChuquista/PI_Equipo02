@@ -14,15 +14,13 @@ No es necesario ser un experto para usarlo: una vez que se llena el balde, el di
 ### ⚙️ Características Principales
 * **Interfaz Intuitiva:** La información se muestra en una pantalla OLED de 1.3" y se apoya en un semáforo de luces LED RGB.
 * **Diseño Seguro:** Cuenta con cierre hermético y sus componentes electrónicos están protegidos contra el agua (certificación IP67) entre las paredes del recipiente para evitar contaminación cruzada.
-* **Autonomía y Economía:** Opera con una batería recargable de 3000mAh (por puerto micro-USB o panel solar) y no requiere pagos mensuales; solo se cambia el cartucho del biosensor una vez al año.
-
+* **Autonomía y Economía:** Opera con una batería recargable de 3000mAh y no requiere pagos mensuales.
 ## 📊 Parámetros Evaluados
 El dispositivo utiliza una lógica basada en los límites de salud pública. El resultado solo será "APTA" si todos los valores están dentro de lo permitido:
 
 * **Acidez (pH):** Evaluado con electrodo ISFET/vidrio (Rango ideal: 6.5 - 8.5).
 * **Turbidez:** Analizado mediante sensor infrarrojo a 880nm (Límite: < 5 NTU).
 * **Conductividad Eléctrica:** Medida con puntas de acero inoxidable 316L (Límite: < 400 µS/cm).
-* **Bacterias (Coliformes):** Detección cualitativa usando un biosensor enzimático (Límite: 0 UFC/100mL).
 
 ## 🌍 Impacto y ODS (Objetivos de Desarrollo Sostenible)
 El proyecto se alinea con las metas globales de la Agenda 2030:
