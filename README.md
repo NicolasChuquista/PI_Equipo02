@@ -13,11 +13,9 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
 ### 🏥 ODS 3: Salud y Bienestar
 > **Meta 3.9:** Reducir considerablemente el número de muertes y enfermedades causadas por productos químicos peligrosos y la contaminación del aire, el agua y el suelo.
 
-* **Aplicación:** El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada.
-
-<p align="center">
-  <img src="img/3.9.png" width="100" alt="Icono ODS 3.9">
-</p>
+| Aplicación | Impacto Visual |
+| :--- | :---: |
+| El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada. | <img src="img/3.9.png" width="150"> |
 
 ### 💧 ODS 6: Agua Limpia y Saneamiento
 > **Meta 6.1:** Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos.
