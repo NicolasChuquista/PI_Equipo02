@@ -38,7 +38,7 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   <tr>
     <td><img width="200" src="img/foto3.jpg"></td>
     <td>Tomás del Castillo Mogollón</td>
-    <td>Diseño</td>
+    <td> CTO (Chief Technology Officer) – Director/a de Tecnología </td>
     <td>Gestión ambiental, Bioremediación</td>
   </tr>
 
