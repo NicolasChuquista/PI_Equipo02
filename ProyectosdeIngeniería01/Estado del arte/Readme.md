@@ -154,7 +154,6 @@ Alianzas para desarrollo
 
 Jefes de hogar en:
 
-```
 - Comunidades rurales
 - Comunidades periurbanas
 - Zonas sin red de agua potable segura
@@ -189,22 +188,6 @@ Elementos protegibles:
 * NTC-813 Calidad de agua potable
 
 ---
-
-# 📌 Resumen ejecutivo
-
-AquaBalde es un sistema de monitoreo doméstico de calidad de agua que integra sensores multiparamétricos dentro de un recipiente de almacenamiento convencional, permitiendo determinar rápidamente si el agua es segura para consumo humano en contextos rurales con infraestructura limitada.
-
-Precio objetivo:
-
-```
-< USD 35
-```
-
-Tiempo medición:
-
-```
-< 60 segundos
-```
 
 Impacto potencial:
 
