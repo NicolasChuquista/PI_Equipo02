@@ -3,7 +3,7 @@ Carrera de Ingeniería Ambiental
 Universidad Peruana Cayetano Heredia
 
 ## 🌍 Descripción del Equipo
-Somos el Equipo 02 del curso Fundamentos de Diseño 2026-1, conformado por estudiantes de la carrera de Ingeniería Ambiental.
+Somos el Equipo 02 del curso Proyectos de Ingeniería 2026-1, conformado por estudiantes de la carrera de Ingeniería Ambiental.
 Nuestro objetivo es aplicar la metodología de diseño para generar soluciones innovadoras con impacto social, tecnológico y ambiental.
 
 ## Nos interesa trabajar en los siguientes Objetivos de Desarrollo Sostenible (ODS):
