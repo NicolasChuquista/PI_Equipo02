@@ -15,7 +15,9 @@ El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones
 
 * **Aplicación:** El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada.
 
-    <td><img width="200" src="img/3.9.png"></td>
+<p align="center">
+  <img src="img/3.9.png" width="200" alt="Icono ODS 3.9">
+</p>
 
 ### 💧 ODS 6: Agua Limpia y Saneamiento
 > **Meta 6.1:** Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos.
