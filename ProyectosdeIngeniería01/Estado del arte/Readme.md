@@ -37,7 +37,6 @@ AquaBalde integra sensores dentro de un balde doméstico de doble pared capaz de
 * pH
 * Turbidez
 * Conductividad eléctrica
-* Coliformes termotolerantes
 
 Entrega resultados en menos de:
 
@@ -64,28 +63,6 @@ Mostrando:
 | Conductividad | 0 – 2000 µS/cm | < 400 µS/cm |
 | Coliformes    | Cualitativo    | 0 UFC/100mL |
 
----
-
-# ⚙️ Regla de clasificación
-
-El agua es:
-
-```
-APTA si:
-
-6.5 ≤ pH ≤ 8.5
-AND Turbidez < 5 NTU
-AND Conductividad < 400 µS/cm
-AND Coliformes = Negativo
-```
-
-Caso contrario:
-
-```
-NO APTA
-```
-
----
 
 # 🧠 Arquitectura del sistema
 
@@ -94,50 +71,24 @@ NO APTA
 * Electrodo pH ISFET
 * Sensor turbidez óptico 880nm
 * Electrodo conductividad acero 316L
-* Biosensor coliformes enzimático
 
 ## Procesamiento
 
 ```
 ESP32-S3
-Dual Core 240MHz
-ADC 12 bits
-WiFi + BLE
 ```
 
 ## Interfaz usuario
 
 * Pantalla OLED 1.3”
-* LEDs RGB
+* NeoPixel Ring
 * Buzzer
 
 ## Energía
 
 * Batería LiPo 3000mAh
 * Panel solar opcional
-* MicroUSB
 
----
-
-# 🏗️ Arquitectura software
-
-Stack tecnológico:
-
-```
-Firmware → ESP-IDF + FreeRTOS
-App móvil → Flutter
-Backend → AWS IoT Core
-Base datos → DynamoDB
-```
-
-Funciones:
-
-* adquisición de datos
-* clasificación automática
-* almacenamiento local
-* sincronización cloud opcional
-
----
 
 # 🔬 Funcionamiento técnico
 
@@ -155,91 +106,12 @@ Procesamiento
 Clasificación OMS
 ↓
 Visualización resultado
-↓
-Almacenamiento
-↓
-Transmisión opcional
-```
-
----
-
-# 🧪 Sensado de coliformes
-
-Tecnología:
-
-```
-beta-D-galactosidasa
-```
-
-Usa:
-
-```
-cartucho reemplazable anual
-```
-
-Tiempo medición:
-
-```
-30 – 45 minutos
-```
-
-Resultado:
-
-```
-Positivo / Negativo
-```
-
----
-
-# 📦 Especificaciones técnicas
-
-| Parámetro        | Valor       |
-| ---------------- | ----------- |
-| Microcontrolador | ESP32-S3    |
-| Pantalla         | OLED 128x64 |
-| Conectividad     | WiFi + BLE  |
-| Protección       | IP67        |
-| Capacidad        | 10L / 20L   |
-| Vida útil        | > 5 años    |
-| Autonomía        | > 12 meses  |
-
----
-
-# 💰 Modelo de negocio
-
-Modelo:
-
-```
-Razor & Blade
-```
-
-Incluye:
-
-Producto base:
-
-```
-AquaBalde ≈ USD 34.90
-```
-
-Consumible anual:
-
-```
-Cartucho biosensor ≈ USD 6.90
-```
-
-Canales:
-
-* B2C
-* B2G
-* B2B ONG
-
----
 
 # 📈 Benchmark competitivo
 
 | Solución  | pH | Turbidez | EC | Coliformes | Precio       |
 | --------- | -- | -------- | -- | ---------- | ------------ |
-| AquaBalde | ✔  | ✔        | ✔  | ✔          | 35 USD       |
+| AquaBalde | ✔  | ✔        | ✔  | ✔          | 70 USD       |
 | Libelium  | ✔  | ✔        | ✔  | ✔          | >3000 USD    |
 | Hach      | ✔  | ✔        | ✔  | ✘          | 800–2500 USD |
 | mWater    | ✘  | ✘        | ✘  | Manual     | Gratis       |
@@ -297,25 +169,13 @@ Beneficios:
 
 ---
 
-# 📊 Costos estimados producción
-
-Producción 1000 unidades:
-
-```
-Costo unitario ≈ USD 24.50
-Precio objetivo ≈ USD 34.90
-```
-
----
-
 # 🔐 Potencial de patente
 
 Elementos protegibles:
 
 * integración multiparamétrica en recipiente
 * algoritmo clasificación semafórica
-* biosensor integrado reemplazable
-* arquitectura doble pared IP67
+* arquitectura doble pared
 
 ---
 
