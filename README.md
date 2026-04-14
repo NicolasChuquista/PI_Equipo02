@@ -3,21 +3,34 @@ Carrera de Ingeniería Ambiental
 Universidad Peruana Cayetano Heredia
 
 ## 🌍 Descripción del Equipo
-Somos el Equipo 02 del curso Fundamentos de Diseño 2026-1, conformado por estudiantes de la carrera de Ingeniería Ambiental.
+Somos el Equipo 02 del curso Proyectos de Ingeniería 2026-1, conformado por estudiantes de la carrera de Ingeniería Ambiental.
 Nuestro objetivo es aplicar la metodología de diseño para generar soluciones innovadoras con impacto social, tecnológico y ambiental.
 
-## Nos interesa trabajar en los siguientes Objetivos de Desarrollo Sostenible (ODS):
+## 🎯 Alineación con los Objetivos de Desarrollo Sostenible (ODS)
 
-1. ODS 3: Salud y Bienestar 
-- Garantiza una vida sana y promueve el bienestar para todos en todas las edades. Se enfoca en metas como reducir la mortalidad materna e infantil, poner fin a epidemias de enfermedades transmisibles y lograr la cobertura sanitaria universal con acceso a medicamentos seguros.
+El proyecto **AquaBalde** se fundamenta en la Agenda 2030, integrando soluciones tecnológicas para abordar desafíos críticos en salud y saneamiento. Nuestras metas específicas son:
 
-2. ODS 6: Agua Limpia y Saneamiento
-- Busca garantizar la disponibilidad de agua, su gestión sostenible y el saneamiento para todos. Sus objetivos incluyen lograr el acceso equitativo al agua potable, mejorar la calidad del recurso reduciendo la contaminación y proteger los ecosistemas relacionados con el agua como ríos y acuíferos.
+### 🏥 ODS 3: Salud y Bienestar
+> **Meta 3.9:** Reducir considerablemente el número de muertes y enfermedades causadas por productos químicos peligrosos y la contaminación del aire, el agua y el suelo.
 
-3. ODS 9: Industria, Innovación e Infraestructura
-- Se orienta a construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible, y fomentar la innovación. Se centra en modernizar la tecnología de los sectores industriales, aumentar la investigación científica y mejorar el acceso de las pequeñas empresas a servicios financieros.
+| Aplicación | Impacto Visual |
+| :--- | :---: |
+| El sistema previene enfermedades de transmisión hídrica mediante un diagnóstico preventivo en tiempo real, alertando al usuario antes de la ingesta de agua contaminada. | <img src="img/3.9.png" width="150"> |
 
-## 📸 Fotografía del Equipo>
+### 💧 ODS 6: Agua Limpia y Saneamiento
+> **Meta 6.1:** Lograr el acceso universal y equitativo al agua potable a un precio asequible para todos.
+
+| Aplicación | Impacto Visual |
+| :--- | :---: |
+| Democratizamos el monitoreo de calidad de agua. Al reducir el costo operativo frente a equipos industriales, permitimos que comunidades rurales tengan una herramienta de vigilancia asequible y técnica. | <img src="img/6.1.png" width="180"> |
+
+### 🏗️ ODS 9: Industria, Innovación e Infraestructura
+> **Meta 9.1:** Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad para apoyar el desarrollo económico y el bienestar humano.
+
+| Aplicación | Impacto Visual |
+| :--- | :---: |
+| Convertimos un recipiente de almacenamiento tradicional en una infraestructura digital inteligente (IoT), fortaleciendo la resiliencia tecnológica en zonas con acceso limitado a servicios básicos. | <img src="img/9.1.png" width="180"> |
+---
 
 <h2>👥 Integrantes del Equipo</h2>
 
@@ -32,28 +45,28 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
   <tr>
     <td><img width="200" src="img/foto1.jpeg"></td>
     <td>Nicolás Genaro Chuqista Rivadeneira</td>
-    <td>Líder del equipo</td>
+    <td> Líder General y de Diseño </td>
     <td>Innovación social, sostenibilidad</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto3.jpg"></td>
     <td>Tomás del Castillo Mogollón</td>
-    <td>Responsable de investigación</td>
+    <td> Líder de Tecnología </td>
     <td>Gestión ambiental, Bioremediación</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto2.jpeg"></td>
     <td>Raúl Enrique Jauregui Penny</td>
-    <td>Diseñador</td>
+    <td> Líder ESG </td>
     <td>Bioeconomía, Gestión de Proyecto</td>
   </tr>
 
   <tr>
     <td><img width="200" src="img/foto4.jpeg"></td>
     <td>Flavio Francisco Rabanal Bravo</td>
-    <td>Encargado de documentación</td>
+    <td> Líder de investigación y operaciones </td>
     <td>Economía Circular, Biotecnología</td>
   </tr>
 
