@@ -52,7 +52,7 @@ Y_train = df_train['PM25']
 
 modelo = sm.OLS(Y_train, X_train).fit()
 ---
----
+```
 
 
 
