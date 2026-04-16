@@ -61,10 +61,26 @@ El modelo fue ajustado mediante Mínimos Cuadrados Ordinarios (OLS) con los sigu
 | **Error Cuadrático Medio (MSE)** | 0.000097 |
 | **Variables Predictoras (X)** | 77 |
 
-Un valor de 0.1792 significa que el modelo es capaz de explicar el 17.92% de la variabilidad del ozono en Florida. Lo que el modelo llega a explicar es el comportamiento causado por las estaciones (el ciclo de verano/invierno) y la ubicación geográfica (ciudades). El 82.08% que el modelo no logra explicar es deibod a que el ozono no depende solo del calendario. Depende de la temperatura exacta, la radiación UV, la velocidad del viento y el tráfico vehicular de ese día. Como nosotros no le dimos esos datos al modelo (solo le dimos fechas y nombres de ciudades), no logra predecir completamente los valores de ozono.
 
 ### 3.2 Visualización de la Predicción Ciega (2023)
 La validación comparó la predicción "ciega" del modelo (línea morada) contra la realidad (línea verde).
 ![Modelo Estacional de 2023](https://github.com/NicolasChuquista/PI_Equipo02/blob/main/img/Modelo.png?raw=true)
 
+
+## 4. Discusión
+Un valor de 0.1792 significa que el modelo es capaz de explicar el 17.92% de la variabilidad del ozono en Florida. Lo que el modelo llega a explicar es el comportamiento causado por las estaciones (el ciclo de verano/invierno) y la ubicación geográfica (ciudades). El 82.08% que el modelo no logra explicar es deibod a que el ozono no depende solo del calendario. Depende de la temperatura exacta, la radiación UV, la velocidad del viento y el tráfico vehicular de ese día. Como no se le sió esos datos al modelo, no logra predecir completamente los valores de ozono.
+
 En la gráfica de validación se observa que el modelo trigonométrico (línea morada) actúa como una línea de tendencia central estacional. A pesar de ser una predicción realizada sin datos meteorológicos del año 2023, logra capturar el ciclo de ascenso y descenso del contaminante con gran precisión. Los picos de la línea verde que escapan a la predicción representan la variabilidad climática y que en el modelo no se incluyeron las variables ambientales necesarias. No obstante, la coincidencia en la tendencia de la curvatura confirma la robustez del modelo para posibles predicciones futuras.
+
+La concentración de ozono en Florida alcanza su cenit entre marzo y junio. Esto responde al incremento de la radiación UV y las temperaturas primaverales, que aceleran las reacciones que ocurren en la atmósfera, afectando las concentraciones de ozono en el área. Asimismo, se puede observar que los otros meses las concentraciones de ozono disminuyen lo que demuestra la dinamica entre las estaciones cálidas en Florida y las estaciones de frío, donde las reacciones químicas en la atmosfera disminuyen.
+El uso de OHE reveló que Florida presenta microclimas de contaminación. La ubicación geográfica actúa como un intercepto que ajusta la línea base de ozono, permitiendo que el modelo entienda las diferencias entre zonas costeras de alta dispersión y zonas urbanas de mayor acumulación de precursores.
+
+---
+
+
+### 5. Referencias Bibliográficas
+[1] U.S. Environmental Protection Agency, “Ground-level ozone basics,” EPA.gov, 2023. [Online]. Available: https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics.
+
+[2] U.S. Environmental Protection Agency, “NAAQS Table,” EPA.gov, 2023. [Online]. Available: https://www.epa.gov/criteria-air-pollutants/naaqs-table.
+
+[3] EPA AirData, “Outdoor air quality data - Download daily data,” 2026. [Online]. Available: https://www.epa.gov/outdoor-air-quality-data.
