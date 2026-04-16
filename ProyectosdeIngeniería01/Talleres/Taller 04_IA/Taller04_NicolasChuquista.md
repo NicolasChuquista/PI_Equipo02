@@ -17,11 +17,9 @@ Para este análisis, se implementó un modelo de Regresión Lineal (OLS) enfocad
 La Figura 1 muestra la comparación entre la concentración media diaria real de $PM_{10}$ (línea verde) y la predicción del modelo estacional (línea roja discontinua).
 
 
-* **Desempeño en Entrenamiento (2024):** El modelo obtuvo un $R^2$ de $0.2017$. Como se observa en la gráfica, la curva de predicción logra delinear una tendencia suave que captura la macro-estacionalidad anual (por ejemplo, el ligero descenso a mediados de año y el incremento hacia los extremos del año). No obstante, el bajo valor de $R^2$ refleja que la mayor parte de la varianza del $PM_{10}$ proviene de fluctuaciones diarias agudas (picos que superan los 25 o 30 $\mu g/m^3$) que un modelo puramente trigonométrico no puede prever.
+* **Desempeño en Entrenamiento (2024):** El modelo obtuvo un $R^2$ de $0.2017$. Como se observa en la gráfica, la curva de predicción logra delinear una tendencia suave que captura la estacionalidad anual ( el ligero descenso a mediados de año y el incremento hacia los extremos del año). No obstante, el bajo valor de $R^2$ refleja que la mayor parte de la varianza del $PM_{10}$ proviene de fluctuaciones diarias agudas (picos que superan los 25 o 30 $\mu g/m^3$).
 * **Desempeño en Prueba (2025):** Las métricas revelan un $RMSE$ de $3.8391$ y un $R^2$ negativo de $-0.1616$. Un coeficiente de determinación negativo indica que, frente a datos nuevos, el modelo predictivo tiene un rendimiento inferior al que se obtendría simplemente prediciendo el promedio histórico constante. 
 * **Análisis del Comportamiento de la Curva:** Las caídas abruptas y escalonadas que se observan en la línea de predicción (especialmente notables en julio y octubre) no corresponden a un efecto temporal puro, sino a la influencia de la variable categórica `Site ID`. Al graficar el promedio diario de las predicciones, la entrada o salida de datos de estaciones específicas con coeficientes base muy bajos o altos distorsiona la media diaria predicha de forma escalonada.
-
-En conclusión, aunque la transformación trigonométrica es útil para identificar la línea base anual, no es suficiente como predictor único para el $PM_{10}$. Las concentraciones están dominadas por fenómenos a corto plazo.
 
 ## 4. Referencias
 
