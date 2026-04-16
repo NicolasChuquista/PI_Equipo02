@@ -63,7 +63,8 @@ El modelo fue ajustado mediante Mínimos Cuadrados Ordinarios (OLS) con los sigu
 
 
 ### 3.2 Visualización de la Predicción Ciega (2023)
-La validación comparó la predicción "ciega" del modelo (línea morada) contra la realidad (línea verde).
+La validación comparó la predicción "ciega" del modelo (línea morada) contra la realidad (línea verde). Donde se puede observar que el modelo logra predecir de manera relativamente precisa la tendencia de las concentraciones de ozono durante el año 2023.
+
 ![Modelo Estacional de 2023](https://github.com/NicolasChuquista/PI_Equipo02/blob/main/img/Modelo.png?raw=true)
 
 
