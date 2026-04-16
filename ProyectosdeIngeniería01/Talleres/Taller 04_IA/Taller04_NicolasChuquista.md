@@ -1,7 +1,7 @@
 # Informe de Modelamiento Estacional de Material Particulado ($PM_{10}$)
 
 ## 1. Introducción
-El material particulado con un diámetro aerodinámico inferior a 10 micrómetros ($PM_{10}$) representa uno de los contaminantes atmosféricos más críticos en áreas urbanas e industriales. Estas partículas provienen de diversas fuentes, incluyendo la resuspensión de polvo, actividades de construcción, emisiones vehiculares y procesos industriales [1]. Dada su capacidad para penetrar en las vías respiratorias, la exposición prolongada y los picos agudos de $PM_{10}$ están estrechamente vinculados con el incremento de morbilidad y mortalidad por enfermedades cardiovasculares y respiratorias [2]. 
+El material particulado con un diámetro aerodinámico inferior a 10 micrómetros ($PM_{10}$) representa uno de los contaminantes atmosféricos más críticos en áreas urbanas e industriales. Estas partículas provienen de diversas fuentes, incluyendo la resuspensión de polvo, actividades de construcción, emisiones vehiculares y procesos industriales [1].
 
 La predicción y el modelamiento de la concentración de $PM_{10}$ son fundamentales para la gestión de la calidad del aire y la alerta temprana. Sin embargo, su comportamiento está sujeto a una alta volatilidad diaria influenciada por variables meteorológicas (como el viento y la precipitación) y patrones estacionales. El desarrollo de modelos que logren capturar la estacionalidad subyacente es un primer paso esencial para entender las dinámicas a largo plazo de este contaminante.
 
@@ -24,8 +24,6 @@ En conclusión, aunque la transformación trigonométrica es útil para identifi
 
 ## 4. Referencias
 
-[1] Organización Mundial de la Salud (OMS), *Directrices mundiales de la OMS sobre la calidad del aire: partículas ($PM_{2.5}$ y $PM_{10}$), ozono, dióxido de nitrógeno, dióxido de azufre y monóxido de carbono*. Ginebra, Suiza: OMS, 2021.
-
-[2] J. O. Anderson, J. G. Thundiyil, y A. Stolbach, "Clearing the air: a review of the effects of particulate matter air pollution on human health," *Journal of Medical Toxicology*, vol. 8, no. 2, pp. 166-175, Jun. 2012. 
+[1] Organización Mundial de la Salud (OMS), *Directrices mundiales de la OMS sobre la calidad del aire: partículas ($PM_{2.5}$ y $PM_{10}$), ozono, dióxido de nitrógeno, dióxido de azufre y monóxido de carbono*. Ginebra, Suiza: OMS, 2021. 
 
 [3] A. K. Voulgarakis *et al.*, "Analysis of seasonality and forecasting of $PM_{10}$ concentrations using time series modeling," *Atmospheric Environment*, vol. 182, pp. 1-12, 2018.
