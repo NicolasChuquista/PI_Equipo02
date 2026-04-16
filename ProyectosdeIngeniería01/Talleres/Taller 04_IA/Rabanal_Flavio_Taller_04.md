@@ -52,6 +52,9 @@ Y_train = df_train['PM25']
 
 modelo = sm.OLS(Y_train, X_train).fit()
 ---
+---
+
+
 
 ### 2.3 Modelo Utilizado
 Se implementó un modelo de regresión lineal multivariable con componente estacional trigonométrica, definido como:
