@@ -16,6 +16,7 @@ Para este análisis, se implementó un modelo de Regresión Lineal (OLS) enfocad
 ## 3. Resultados y Discusión
 La Figura 1 muestra la comparación entre la concentración media diaria real de $PM_{10}$ (línea verde) y la predicción del modelo estacional (línea roja discontinua).
 
+![Modelo Estacional de 2023](https://github.com/NicolasChuquista/PI_Equipo02/blob/main/img/Fig_Taller04%20NicolasChuquista.png?raw=true)
 
 * **Desempeño en Entrenamiento (2024):** El modelo obtuvo un $R^2$ de $0.2017$. Como se observa en la gráfica, la curva de predicción logra delinear una tendencia suave que captura la estacionalidad anual ( el ligero descenso a mediados de año y el incremento hacia los extremos del año). No obstante, el bajo valor de $R^2$ refleja que la mayor parte de la varianza del $PM_{10}$ proviene de fluctuaciones diarias agudas (picos que superan los 25 o 30 $\mu g/m^3$).
 * **Desempeño en Prueba (2025):** Las métricas revelan un $RMSE$ de $3.8391$ y un $R^2$ negativo de $-0.1616$. Un coeficiente de determinación negativo indica que, frente a datos nuevos, el modelo predictivo tiene un rendimiento inferior al que se obtendría simplemente prediciendo el promedio histórico constante. 
