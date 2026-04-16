@@ -39,9 +39,9 @@ Se implementó un modelo de regresión lineal multivariable con componente estac
 ![Modelo Taller 04](https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/main/img/Rabanal%20_Flavio_Modelo_Taller04.png)
 
 Donde:
-t: representa la tendencia temporal (en días)
-m: corresponde al mes del año
-Las funciones seno y coseno permiten modelar la estacionalidad anual
+- t: representa la tendencia temporal (en días)
+- m: corresponde al mes del año
+- Las funciones seno y coseno permiten modelar la estacionalidad anual
 
 ### 2.4 Entrenamiento y predicción
 Periodo de entrenamiento: 2022–2023
