@@ -13,6 +13,18 @@ Para este análisis, se implementó un modelo de Regresión Lineal (OLS) enfocad
   * *Codificación Espacial:* Se aplicó *One-Hot Encoding* a la variable `Site ID` para que el modelo asigne un peso específico a las características base de cada estación de monitoreo.
 * **Entrenamiento y Evaluación:** Se entrenó el modelo multivariado utilizando únicamente los datos de 2024. El desempeño se evaluó sobre los datos invisibles de 2025 mediante el Coeficiente de Determinación ($R^2$) y el Error Cuadrático Medio ($RMSE$).
 
+```python
+# Transformación trigonométrica: Usamos SOLO el "día del año" para capturar la estacionalidad
+df_completo['dia_del_anio'] = df_completo[col_fecha].dt.dayofyear
+df_completo['sin_tiempo'] = np.sin(2 * np.pi * df_completo['dia_del_anio'] / 365.25)
+df_completo['cos_tiempo'] = np.cos(2 * np.pi * df_completo['dia_del_anio'] / 365.25)
+```
+
+```python
+# One-Hot Encoding para las estaciones (Site ID)
+df_encoded = pd.get_dummies(df_completo, columns=[col_estacion], drop_first=True)
+```
+
 ## 3. Resultados y Discusión
 La Figura 1 muestra la comparación entre la concentración media diaria real de $PM_{10}$ (línea verde) y la predicción del modelo estacional (línea roja discontinua).
 
