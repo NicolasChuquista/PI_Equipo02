@@ -29,6 +29,8 @@ Agrupación por fecha para obtener el promedio diario de PM2.5 (considerando mú
 #### 2.3 Modelo Utilizado
 Se implementó un modelo de regresión lineal multivariable con componente estacional trigonométrica, definido como:
 
+![Modelo Taller 04](https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/main/img/Rabanal%20_Flavio_Modelo_Taller04.png)
+
 Donde:
 t: representa la tendencia temporal (en días)
 m: corresponde al mes del año
