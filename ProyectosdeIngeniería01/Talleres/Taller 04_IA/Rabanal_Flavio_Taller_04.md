@@ -32,31 +32,6 @@ El tratamiento de los datos incluyó las siguientes etapas:
 - Agrupación por fecha para obtener el promedio diario de PM2.5 (considerando múltiples estaciones)  
 
 ```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
-from sklearn.metrics import r2_score
-
-
-url = "https://raw.githubusercontent.com/FlavioRabanal/gdp-dashboard/main/Dataset.xlsx"
-df = pd.read_excel(url)
-
-df = df.rename(columns={
-    'Daily Mean PM2.5 Concentration': 'PM25'
-})
-
-df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
-
-df = df[df['State'] == 'Alabama']
-df = df[['Date', 'PM25']]
-df = df.dropna()
-
-df = df.groupby('Date').mean().reset_index()
-df = df.sort_values('Date')
-
-df_train = df[(df['Date'] >= '2022-01-01') & (df['Date'] <= '2023-12-31')].copy()
-
 def crear_features(data, t_start=0):
     data = data.copy()
     data['t'] = range(t_start, t_start + len(data))
@@ -76,56 +51,6 @@ X_train = sm.add_constant(X_train)
 Y_train = df_train['PM25']
 
 modelo = sm.OLS(Y_train, X_train).fit()
-
-print(modelo.summary())
-
-fechas_2024 = pd.date_range(start='2024-01-01', end='2024-12-31')
-
-df_2024 = pd.DataFrame({'Date': fechas_2024})
-df_2024 = crear_features(df_2024, len(df_train))
-
-X_2024 = df_2024[['t', 'sin_month', 'cos_month']]
-X_2024 = sm.add_constant(X_2024)
-
-df_2024['PM25_pred'] = modelo.predict(X_2024)
-
-r2_train = r2_score(Y_train, modelo.predict(X_train))
-
-plt.figure(figsize=(14,6))
-
-# Datos reales (2022–2023)
-plt.plot(df_train['Date'], df_train['PM25'],
-         color='green', alpha=0.4, label='PM2.5 real')
-
-# Ajuste del modelo
-plt.plot(df_train['Date'], modelo.predict(X_train),
-         color='red', linestyle='--', label='Modelo estacional')
-
-# Predicción 2024
-plt.plot(df_2024['Date'], df_2024['PM25_pred'],
-         color='orange', linestyle='--', label='Predicción 2024')
-
-# Línea de separación
-plt.axvline(pd.to_datetime("2024-01-01"),
-            color='black', linestyle=':', label='Inicio predicción')
-
-# Métrica
-plt.text(df_train['Date'].min(), df_train['PM25'].max()*0.95,
-         f'R² train = {r2_train:.3f}',
-         bbox=dict(facecolor='white', alpha=0.7))
-
-# Labels
-plt.title("Modelo Estacional Trigonométrico — PM2.5 Alabama (Forecast 2024)")
-plt.xlabel("Fecha")
-plt.ylabel("PM2.5 (µg/m³)")
-plt.legend()
-
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
-```
-
-
 ---
 
 ### 2.3 Modelo Utilizado
