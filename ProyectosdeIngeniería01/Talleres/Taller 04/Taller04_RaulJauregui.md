@@ -108,7 +108,7 @@ Las métricas de evaluación utilizadas fueron el coeficiente de determinación 
 
 ### 3.2 Serie Temporal y Modelo Estacional
 
-![Serie temporal completa con modelo estacional](fig1_serie_temporal.png)
+![Serie temporal completa con modelo estacional](../../../img/fig1_serie_temporal.png)
 
 *Figura 1. Concentración diaria promedio de ozono (28 estaciones) y curva del modelo trigonométrico estacional. La línea vertical roja separa el período de entrenamiento (2023–2024) del período de prueba (2025).*
 
@@ -116,7 +116,7 @@ La Figura 1 muestra que el modelo captura correctamente el patrón estacional �
 
 ### 3.3 Estacionalidad Mensual
 
-![Estacionalidad mensual real vs predicha](fig2_estacionalidad.png)
+![Estacionalidad mensual real vs predicha](../../../img/fig2_estacionalidad.png)
 
 *Figura 2. Concentración promedio mensual de ozono: valores reales (2023–2025) vs predicciones del modelo trigonométrico.*
 
@@ -137,7 +137,7 @@ La Figura 1 muestra que el modelo captura correctamente el patrón estacional �
 
 ### 3.4 Comparativa de Modelos
 
-![Comparativa R² de los tres modelos](fig5_comparativa_modelos.png)
+![Comparativa R² de los tres modelos](../../../img/fig5_comparativa_modelos.png)
 
 *Figura 3. Comparativa de R² en entrenamiento y prueba para los tres modelos ajustados.*
 
@@ -153,13 +153,13 @@ El Modelo 3 logra el **mejor R² en el conjunto de prueba (0.2090)** y el **meno
 
 ### 3.5 Real vs Predicho
 
-![Dispersión real vs predicho en train y test](fig3_real_vs_predicho.png)
+![Dispersión real vs predicho en train y test](../../../img/fig3_real_vs_predicho.png)
 
 *Figura 4. Dispersión de valores reales vs predichos en los conjuntos de entrenamiento (izquierda) y prueba (derecha). La línea punteada representa la predicción perfecta.*
 
 ### 3.6 Proyección 2026
 
-![Proyección de ozono para 2026](fig4_prediccion_2026.png)
+![Proyección de ozono para 2026](../../../img/fig4_prediccion_2026.png)
 
 *Figura 5. Proyección de concentraciones de ozono para el año completo 2026. La banda azul representa la incertidumbre del modelo (±RMSE = ±0.00938 ppm). La línea roja punteada indica el límite NAAQS de 0.070 ppm.*
 
