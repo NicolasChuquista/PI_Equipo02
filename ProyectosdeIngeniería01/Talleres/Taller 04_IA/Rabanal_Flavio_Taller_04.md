@@ -43,7 +43,7 @@ El modelo fue ajustado mediante el método de mínimos cuadrados ordinarios (OLS
 ### 3. Resultados
 El modelo permitió ajustar una curva estacional suave que representa el comportamiento general del PM2.5, así como generar una predicción continua para el año 2024.
 
-![Resultado](img/Flavio_Rabanal_Multivariable.png)
+(https://github.com/NicolasChuquista/PI_Equipo02/blob/main/img/Flavio%20Rabanal_Multivariable.png?raw=true)
 
 ### 4. Discusión
 El modelo estacional trigonométrico logra representar de manera adecuada el comportamiento general del PM2.5, particularmente su componente estacional. La presencia de ciclos anuales bien definidos valida el uso de funciones seno y coseno para este tipo de análisis.
