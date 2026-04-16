@@ -15,10 +15,27 @@ Para garantizar la validez del modelo, se aplicó una partición temporal estric
 - Entrenamiento: 2018 – 2022 (El modelo aprende los ciclos históricos).
 
 - Prueba (Test): 2023 (Evaluación a ciegas del modelo).
-### 2.1 Ingeniería de Variables
-Para mejorar la precisión de la **Regresión Lineal**, se aplicaron transformaciones matemáticas avanzadas:
+  
+### 2.2 Ingeniería de Variables
+El dataset original de la EPA contenía más de 20 columnas (coordenadas, códigos de método, códigos CBSA, etc.). Para evitar el sobreajuste y el "ruido" estadístico, se realizó una limpieza profunda seleccionando únicamente 3 variables lógicas que afectan la concentración:
 
-* **Trigonometría (Seno/Coseno):** Para capturar la estacionalidad anual.
-* **One-Hot Encoding:** Para diferenciar el impacto de cada estación de monitoreo (`Local Site Name`).
+1.  Temporalidad Lineal (Tendencia): El paso del tiempo en días.
+2.  Ciclicidad (Estaciones): El momento del año en el que nos encontramos.
+3.  Ubicación Geográfica: El sitio específico de monitoreo.
 
-### 2.2 Código Principal (Python)
+### 2.3 Tratamiento de la Fecha y Estacionalidad
+Para que el modelo lineal pudiera "leer" la fecha sin confundirse, el tiempo se separó en dos dimensiones:
+
+- Días Transcurridos: Se calculó el número de días desde el inicio del estudio (01/01/2018). Esto permite al modelo detectar si el ozono está subiendo o bajando de forma general a través de los años.
+
+- Transformación Trigonométrica (Seno/Coseno): Para capturar las estaciones, el día del año (1-365) se transformó en coordenadas circulares. Esto es vital para que el modelo entienda que el 31 de diciembre está "al lado" del 1 de enero, permitiendo una curva de predicción fluida.
+
+```python
+# Tratamiento de Variables
+fecha_inicio = df['Date'].min() 
+df['Dias_Transcurridos'] = (df['Date'] - fecha_inicio).dt.days
+df['Año'] = df['Date'].dt.year
+df['Dia_Anio'] = df['Date'].dt.dayofyear
+df['Seno_Anual'] = np.sin(2 * np.pi * df['Dia_Anio'] / 365.25)
+df['Coseno_Anual'] = np.cos(2 * np.pi * df['Dia_Anio'] / 365.25)
+df['Dia_Semana'] = df['Date'].dt.dayofweek.astype(str)
