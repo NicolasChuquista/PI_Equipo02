@@ -1,7 +1,7 @@
 # Análisis de Regresión de Concentraciones de Ozono Troposférico en Nueva York (2023–2025)
 
-**Autor:** [Tu nombre]  
-**Curso:** [Nombre del curso]  
+**Autor:** Raul Enrique Jauregui Penny  
+**Curso:** Proyectos I  
 **Fecha:** Abril 2026  
 
 ---
