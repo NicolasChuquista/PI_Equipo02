@@ -68,6 +68,24 @@ La variable `Site ID` fue codificada mediante OHE, generando una columna binaria
 
 **Variable objetivo:** `Daily Max 8-hour Ozone Concentration` (ppm)
 
+La ecuación general del modelo es la siguiente:
+
+$$
+\hat{y}_i = \beta_0 + \beta_1 \cdot \text{Year}_i + \beta_2 \cdot \sin\left(\frac{2\pi \cdot \text{DayOfYear}_i}{365}\right) + \beta_3 \cdot \cos\left(\frac{2\pi \cdot \text{DayOfYear}_i}{365}\right) + \sum_{j=1}^{27} \gamma_j \cdot \text{Site}_j + \varepsilon_i
+$$
+
+Donde:
+
+| Símbolo | Descripción |
+|---|---|
+| $\hat{y}_i$ | Concentración máxima diaria de ozono predicha (ppm) |
+| $\beta_0$ | Intercepto del modelo |
+| $\beta_1$ | Coeficiente de la tendencia interanual |
+| $\beta_2, \beta_3$ | Coeficientes de las componentes estacionales (seno y coseno) |
+| $\gamma_j$ | Coeficiente de la estación de monitoreo $j$ (One-Hot Encoding, 28 categorías) |
+| $\varepsilon_i$ | Error residual del modelo |
+| $\text{DayOfYear}_i$ | Día del año de la observación $i$ (1–365) |
+
 ### 2.4 Modelos Ajustados
 
 Se ajustaron tres modelos de regresión por mínimos cuadrados ordinarios (OLS) con complejidad creciente:
