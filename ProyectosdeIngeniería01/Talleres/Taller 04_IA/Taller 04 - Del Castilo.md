@@ -28,7 +28,7 @@ Para que el modelo lineal pudiera "leer" la fecha sin confundirse, el tiempo se 
 
 - Días Transcurridos: Se calculó el número de días desde el inicio del estudio (01/01/2018). Esto permite al modelo detectar si el ozono está subiendo o bajando de forma general a través de los años.
 
-- Transformación Trigonométrica (Seno/Coseno): Para capturar las estaciones, el día del año (1-365) se transformó en coordenadas circulares. Esto es vital para que el modelo entienda que el 31 de diciembre está "al lado" del 1 de enero, permitiendo una curva de predicción fluida.
+- Transformación Trigonométrica (Seno/Coseno): Para capturar las estaciones, el día del año (1-365) se transformó en coordenadas circulares, permitiendo una curva de predicción fluida.
 
 ```python
 # Tratamiento de Variables
@@ -39,3 +39,10 @@ df['Dia_Anio'] = df['Date'].dt.dayofyear
 df['Seno_Anual'] = np.sin(2 * np.pi * df['Dia_Anio'] / 365.25)
 df['Coseno_Anual'] = np.cos(2 * np.pi * df['Dia_Anio'] / 365.25)
 df['Dia_Semana'] = df['Date'].dt.dayofweek.astype(str)
+```
+- One-Hot Encoding (OHE): Se transformó la variable categórica Local Site Name en variables binarias independientes, permitiendo que el modelo asigne un coeficiente específico a cada ubicación geográfica en Florida.
+
+```python
+X = pd.get_dummies(X, columns=['Dia_Semana', 'Local Site Name'], drop_first=True, dtype=int)
+X = sm.add_constant(X)
+```
