@@ -13,16 +13,24 @@ $$y_{pH} = -7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}$$
 * **$m$:** Es la pendiente de la línea, igual a $-7.74 \times 10^{-5}$.
 
 
-> **Gráfico 1:** Tasa de Crecimiento E.Coli a diferentes pH (2)
-
-<img src="img/Parametros1.JPG" width="200" alt="Gráfico de tasa de crecimiento vs pH">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros1.JPG" width="500">
+  <br>
+  <b>Gráfico 1: Tasa de Crecimiento E.Coli a diferentes pH (2)</b>
+</p>
 
 ---
 
 ## Temperatura
 En entornos ambientales reales, la temperatura actúa como el principal modulador cinético. Para el AquaBalde, se ha implementado un Factor de Ajuste Térmico ($F_T$) basado en el Modelo de Raíz Cuadrada de Ratkowsky.
 
-> **Figura 1:** Modelo de Raíz Cuadrada de Ratkowsky (3)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros2.JPG" width="230">
+  <br>
+  <b>Figura 1: Modelo de Raíz Cuadrada de Ratkowsky (3)</b>
+</p>
+
+
 
 Este modelo se ajusta con mayor precisión a sistemas biológicos complejos al reconocer una temperatura mínima conceptual, por debajo de la cual el crecimiento es nulo. La integración se realiza mediante un proceso de normalización de variables, resultando en la siguiente expresión: 
 
@@ -51,9 +59,9 @@ Sustituyendo los valores constantes ($T_0=7°C, T_{ref}=20°C$):
 
 $$y_{final} = (-7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}) \times \left( \frac{T_{sensor} - 7}{13} \right)^2$$
 
-* **Alto Nivel:** $y_{final} \geq 0.008 \text{ min}^{-1}$
-* **Nivel Medio:** $0.004 \text{ min}^{-1} \leq y_{final} < 0.008 \text{ min}^{-1}$
-* **Bajo Nivel:** $y_{final} < 0.004 \text{ min}^{-1}$
+* **Alta Proliferación:** $y_{final} \geq 0.008 \text{ min}^{-1}$
+* **Moderada Proliferación:** $0.004 \text{ min}^{-1} \leq y_{final} < 0.008 \text{ min}^{-1}$
+* **Bajo Proliferación:** $y_{final} < 0.004 \text{ min}^{-1}$
 
 ---
 
@@ -61,7 +69,13 @@ $$y_{final} = (-7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}) \times \
 
 A diferencia de los parámetros cinéticos, la turbidez (NTU) funciona como un indicador directo de la presencia de sólidos suspendidos. Su importancia radica en que niveles elevados de turbidez suelen correlacionarse con la presencia de coliformes (5) que son resistentes a factores ambientales como el frío o la acidez.
 
-> **Tabla 1:** Riesgo de presencia de Coliformes a diferentes niveles de Turbidez (6) 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros3.JPG" width="270">
+  <br>
+  <b>Tabla 1: Riesgo de presencia de Coliformes a diferentes niveles de Turbidez (6)</b>
+</p>
+
+
 
 Para la categorización del riesgo, se adoptan los umbrales de la bibliografía revisada, donde cualquier valor por encima de 5 NTU se considera un indicador crítico de contaminación, independientemente de la tasa de proliferación bacteriana.
 
@@ -69,7 +83,12 @@ Para la categorización del riesgo, se adoptan los umbrales de la bibliografía 
 
 ## Criterios Conjuntos de Clasificación:
 
-> **Figura 2:** Criterios (Creación Propia) 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros4.JPG" width="700">
+  <br>
+  <b>Figura 2: Criterios (Creación Propia) </b>
+</p>
+
 
 ---
 
