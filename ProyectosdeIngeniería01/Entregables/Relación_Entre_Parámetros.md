@@ -7,6 +7,13 @@ Basándose en modelos experimentales previos (2), se puede extrapolar una ecuaci
 
 $$y_{pH} = -7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}$$
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_1.png" width="500">
+  <br>
+  <b>Gráfico 1: Tasa de Crecimiento E.Coli a diferentes pH (2)</b>
+</p>
+
+
 **Donde:**
 * **$y_{pH}$:** Tasa de crecimiento basal (1/Generation time (min)), calculada a una temperatura de referencia ($T_{ref}$). Es el tiempo que tarda una población de organismos en duplicarse.
 * **$[H^+]$:** Concentración de iones hidrógeno en micromolar (u/M), derivada de la medición del sensor: $[H^+] = 10^{-pH}$.
