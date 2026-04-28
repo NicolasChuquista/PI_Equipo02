@@ -12,7 +12,10 @@ $$y_{pH} = -7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}$$
 * **$[H^+]$:** Concentración de iones hidrógeno en micromolar (u/M), derivada de la medición del sensor: $[H^+] = 10^{-pH}$.
 * **$m$:** Es la pendiente de la línea, igual a $-7.74 \times 10^{-5}$.
 
+
 > **Gráfico 1:** Tasa de Crecimiento E.Coli a diferentes pH (2)
+
+<img src="img/Parametros1.JPG" width="200" alt="Gráfico de tasa de crecimiento vs pH">
 
 ---
 
