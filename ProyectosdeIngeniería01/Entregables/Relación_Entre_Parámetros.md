@@ -66,10 +66,6 @@ Sustituyendo los valores constantes ($T_0=7°C, T_{ref}=20°C$):
   <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_4.png" width="600">
   <br>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_4.png" width="600">
-  <br>
-
 * **Alta Proliferación:** $y_{final} \geq 0.008 \text{ min}^{-1}$
 * **Moderada Proliferación:** $0.004 \text{ min}^{-1} \leq y_{final} < 0.008 \text{ min}^{-1}$
 * **Bajo Proliferación:** $y_{final} < 0.004 \text{ min}^{-1}$
