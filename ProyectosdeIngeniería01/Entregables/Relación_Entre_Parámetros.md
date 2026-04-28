@@ -5,14 +5,9 @@ El pH óptimo para el desarrollo de *E. coli* se sitúa en la neutralidad. Las d
 
 Basándose en modelos experimentales previos (2), se puede extrapolar una ecuación que sirve para analizar el crecimiento a cualquier nivel de pH con una temperatura de referencia:
 
-$$y_{pH} = -7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}$$
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_1.png" width="500">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_1.png" width="350">
   <br>
-  <b>Gráfico 1: Tasa de Crecimiento E.Coli a diferentes pH (2)</b>
-</p>
-
 
 **Donde:**
 * **$y_{pH}$:** Tasa de crecimiento basal (1/Generation time (min)), calculada a una temperatura de referencia ($T_{ref}$). Es el tiempo que tarda una población de organismos en duplicarse.
@@ -32,7 +27,7 @@ $$y_{pH} = -7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}$$
 En entornos ambientales reales, la temperatura actúa como el principal modulador cinético. Para el AquaBalde, se ha implementado un Factor de Ajuste Térmico ($F_T$) basado en el Modelo de Raíz Cuadrada de Ratkowsky.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros2.JPG" width="230">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Parametros2.JPG" width="200">
   <br>
   <b>Figura 1: Modelo de Raíz Cuadrada de Ratkowsky (3)</b>
 </p>
@@ -41,7 +36,9 @@ En entornos ambientales reales, la temperatura actúa como el principal modulado
 
 Este modelo se ajusta con mayor precisión a sistemas biológicos complejos al reconocer una temperatura mínima conceptual, por debajo de la cual el crecimiento es nulo. La integración se realiza mediante un proceso de normalización de variables, resultando en la siguiente expresión: 
 
-$$F_T = \left( \frac{T_{sensor} - T_0}{T_{ref} - T_0} \right)^2$$
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_2.png" width="250">
+  <br>
 
 **Donde:**
 * **$F_T$:** Factor de Ajuste Térmico.
@@ -52,7 +49,10 @@ $$F_T = \left( \frac{T_{sensor} - T_0}{T_{ref} - T_0} \right)^2$$
 Esta normalización asegura que cuando la temperatura medida sea igual a la de control ($T_{sensor} = T_{ref}$), el factor sea igual a 1, respetando la validez del modelo de pH original, pero ajustándose dinámicamente para climas fríos o cálidos. 
 
 Si la temperatura medida es menor o igual a la temperatura mínima, el sistema asigna automáticamente una tasa de crecimiento final de 0, reflejando la inactivación por frío. 
-$$T_{sensor} \leq 7°C \rightarrow y_{final} = 0$$
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_3.png" width="250">
+  <br>
 
 ---
 
@@ -60,11 +60,12 @@ $$T_{sensor} \leq 7°C \rightarrow y_{final} = 0$$
 
 La tasa de crecimiento final es el producto de la susceptibilidad química y la capacidad cinética:
 
-$$y_{final} = y_{pH} \times F_T$$
-
 Sustituyendo los valores constantes ($T_0=7°C, T_{ref}=20°C$):
 
-$$y_{final} = (-7.74 \times 10^{-5} \times [H^+] + 9.61 \times 10^{-3}) \times \left( \frac{T_{sensor} - 7}{13} \right)^2$$
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/param_4.png" width="600">
+  <br>
+
 
 * **Alta Proliferación:** $y_{final} \geq 0.008 \text{ min}^{-1}$
 * **Moderada Proliferación:** $0.004 \text{ min}^{-1} \leq y_{final} < 0.008 \text{ min}^{-1}$
