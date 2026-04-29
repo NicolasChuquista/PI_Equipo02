@@ -1,37 +1,21 @@
-Informe de Laboratorio: Reto 1 y 2
-1. Introducción
-En esta sesión se exploraron las capacidades del microcontrolador ESP32, una herramienta versátil en el desarrollo de proyectos de Ingeniería Ambiental y monitoreo en tiempo real. El trabajo se dividió en dos etapas: la integración de hardware para la captura de señales físicas y la configuración de comunicación inalámbrica.
+Taller 08: Informe
+Fecha: 28 de abril de 2026
 
-2. Reto N° 1: Adquisición de Datos y Control Local
-Objetivo: Leer una señal analógica de un sensor y controlar un actuador de forma física.
 
-2.1 Configuración de Hardware
-Sensor: Se utilizó un potenciómetro conectado al pin D34. Este pin actúa como ADC (Conversor Analógico a Digital), transformando el voltaje variable en valores numéricos entre 0 y 4095.
+1. Resumen y Objetivos
+El presente documento describe el proceso de configuración y validación de un nodo de procesamiento basado en el microcontrolador ESP32. El objetivo principal fue integrar la captura de variables analógicas del entorno con capacidades de comunicación inalámbrica mediante el stack de protocolos WiFi. Para ello, se diseñó un sistema capaz de cuantificar cambios de voltaje a través de un potenciómetro y, simultáneamente, gestionar la autenticación en redes locales para la futura transmisión de datos en aplicaciones de ingeniería ambiental.
 
-Actuador: Un LED conectado al pin D2, protegido por una resistencia de 330Ω.
+2. Metodología y Procedimiento Experimental: Reto 1
+La fase inicial del laboratorio se centró en la implementación de una interfaz de entrada y salida para la adquisición de datos en tiempo real. Se realizó el montaje físico vinculando un potenciómetro al pin GPIO 34 del ESP32, el cual fue seleccionado por su resolución nativa de 12 bits en el convertidor analógico-digital (ADC). Esta configuración permitió transformar el rango de voltaje de 0V a 3.3V en una escala numérica de 0 a 4095 unidades. En paralelo, se acondicionó un actuador visual mediante un LED conectado al pin GPIO 2 con una resistencia limitadora de 220Ω para garantizar la integridad del componente.
 
-2.2 Lógica de Programación
-El código cargado en Arduino IDE permitió:
+En cuanto al desarrollo del software en Arduino IDE, se programó una lógica de control de lazo abierto que utilizaba el bus serie a una velocidad de 115200 baudios. El programa ejecutaba una lectura constante del sensor y, mediante una estructura condicional, activaba el estado lógico del LED al superar un umbral crítico de 2000 unidades. Este procedimiento validó la capacidad del microcontrolador para procesar señales externas y ejecutar acciones de control local de manera inmediata.
 
-Monitorear el valor del sensor en tiempo real a través del Monitor Serie.
+3. Desarrollo de Conectividad Inalámbrica: Reto 2
+La segunda fase consistió en la habilitación del módulo de radiofrecuencia para integrar el dispositivo en una red de área local. Utilizando la librería estándar WiFi.h, se configuró el ESP32 en modo Estación (STA), procediendo inicialmente a un escaneo dinámico de los canales de la banda de 2.4 GHz. Este barrido permitió identificar los SSIDs disponibles y evaluar la calidad del enlace mediante el indicador RSSI (Received Signal Strength Indicator), fundamental para determinar la viabilidad de la transmisión de datos en entornos con interferencia.
 
-Implementar una lógica condicional: si el valor superaba el umbral de 2000, el LED se encendía; de lo contrario, permanecía apagado.
+El proceso de conexión se gestionó de forma interactiva a través del Monitor Serie, donde el usuario seleccionaba la red y proporcionaba las credenciales de acceso. El código implementó un algoritmo de espera activa que monitoreaba el registro de estado del chip hasta confirmar la asociación exitosa con el router (Hotspot). Finalmente, el sistema recuperó y desplegó la dirección IP asignada mediante el protocolo DHCP, lo que representa la obtención de una identidad digital dentro de la red, paso indispensable para cualquier proyecto de monitoreo remoto o IoT.
 
-3. Reto N° 2: Escaneo y Conexión a Red (WiFi)
-Objetivo: Habilitar la conectividad inalámbrica del ESP32 para su futura integración en redes IoT.
+4. Análisis de Resultados y Conclusiones
+Los resultados obtenidos demuestran una alta fiabilidad en la digitalización de la señal analógica, observándose una respuesta fluida y coherente entre el movimiento mecánico del potenciómetro y los valores reflejados en el terminal. Asimismo, la estabilidad de la conexión WiFi, con tiempos de asociación menores a cinco segundos, confirma que el ESP32 es una plataforma robusta para el despliegue de estaciones de monitoreo autónomas.
 
-3.1 Implementación de Software
-Se utilizó la librería WiFi.h. El proceso consistió en:
-
-Escaneo de Redes: El ESP32 identificó los puntos de acceso cercanos, mostrando su nombre (SSID) y potencia de señal (RSSI).
-
-Interfaz Interactiva: Mediante el Monitor Serie, se seleccionó la red correspondiente al hotspot de un dispositivo móvil.
-
-Autenticación y Asignación de IP: Tras ingresar la contraseña, el dispositivo estableció una conexión exitosa, obteniendo una dirección IP local.
-
-4. Análisis y Conclusiones
-Integración de Sistemas: Se demostró que el ESP32 puede procesar información del entorno (Reto 1) y, simultáneamente, tener la capacidad de transmitir esa información a través de una red (Reto 2).
-
-Importancia del Monitor Serie: Esta herramienta fue fundamental en ambos retos para depurar errores y visualizar el comportamiento interno del programa.
-
-Aplicación Práctica: Estos ejercicios sientan las bases para desarrollar estaciones de monitoreo ambiental autónomas que puedan enviar datos de sensores (como calidad de aire o agua) a la nube de manera inalámbrica.
+Como conclusión, la integración de estos dos retos permite establecer las bases técnicas para sistemas de ingeniería más complejos. La capacidad de capturar datos físicos y contar con una interfaz de comunicación inalámbrica funcional abre la posibilidad de enviar métricas ambientales a servidores en la nube (Cloud Computing), optimizando la recolección de información en campo y permitiendo el análisis de datos masivos para la toma de decisiones tecnológicas.
