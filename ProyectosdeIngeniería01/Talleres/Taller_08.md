@@ -4,15 +4,11 @@
 
 ---
 
-## 1. Introducción
 El presente laboratorio tuvo como propósito fundamental la integración de capacidades de hardware y software en el microcontrolador ESP32 para el desarrollo de un nodo de monitoreo inteligente. La experiencia se estructuró en dos fases críticas: La digitalización de señales analógicas mediante la captura de datos provenientes de sensores físicos, y la conectividad a través de la habilitación de protocolos de comunicación inalámbrica.
-
-## 2. Objetivo
-Consolidar una plataforma capaz de interactuar con el entorno y comunicarse dentro de una arquitectura de **Internet de las Cosas (IoT)**.
 
 ---
 
-## 3. Reto 1
+## Reto 1
 
 La fase inicial del laboratorio se centró en la implementación de una interfaz de entrada y salida para la adquisición de datos en tiempo real.
 
@@ -38,7 +34,7 @@ El software se configuró con un bus serie a 115200 baudios. El algoritmo ejecut
 
 ---
 
-## 4. Reto 2
+## Reto 2
 
 La segunda fase consistió en la utilización de la librería `<WiFi.h>` para configurar el ESP32 en modo Estación (STA), realizando un escaneo dinámico de los canales de la banda de **2.4 GHz**. Este barrido permitió identificar SSIDs y evaluar la calidad del enlace mediante el indicador RSSI.
 
@@ -51,11 +47,10 @@ Finalmente, el sistema recuperó y desplegó la dirección IP asignada mediante 
 
 ---
 
-## 5. Análisis de Resultados y Conclusiones
+## Conclusiones
 
 Los resultados demuestran una alta fiabilidad en la digitalización de la señal analógica, con una respuesta fluida entre el movimiento del potenciómetro y los valores seriales. La estabilidad de la conexión WiFi, con tiempos de asociación rápidos, confirma la robustez del ESP32 como plataforma para estaciones de monitoreo.
 
-### Conclusiones
 * La integración exitosa establece las bases para proyectos de ingeniería de mayor envergadura.
 * La capacidad de capturar datos físicos y contar con conectividad inalámbrica permite proyectar este sistema hacia el envío de métricas a la **nube**.
 * Este flujo de trabajo facilita la recolección de información en campo y el análisis de datos masivos para la toma de decisiones en tiempo real.
