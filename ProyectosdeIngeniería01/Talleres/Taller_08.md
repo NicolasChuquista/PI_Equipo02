@@ -6,7 +6,6 @@
 - Tomás del Castillo Mogollón
 - Flavio Francisco Rabanal Bravo
 - Nicolás Genaro Chuquista Rivadeneira
-- Raul Enrique Jauregui Penny
 
 ---
 
@@ -53,6 +52,14 @@ El proceso de conexión se gestionó de forma interactiva a través del Monitor 
 Seleccionamos la red detectada en la lista y escribimos la contraseña manualmente. Tras ello, observamos cómo el código entraba en una "espera activa" mientras intentaba el enlace. Una vez lograda la conexión, el router nos asignó una dirección IP mediante el protocolo DHCP. Esta "identidad digital" es el paso final que confirma que nuestro ESP32 ya es parte de una red y está listo para enviar datos de sensores a cualquier servidor remoto.
 
 ---
+
+## Reto 3
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Taller08_1.JPG" width="400">
+  <br>
+  <b>Figura 1: Circuito - Reto 1</b>
+</p>
 
 ## Conclusiones
 
