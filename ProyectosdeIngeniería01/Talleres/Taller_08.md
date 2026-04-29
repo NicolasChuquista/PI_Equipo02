@@ -36,7 +36,7 @@ El software se configuró con un bus serie a 115200 baudios. El algoritmo ejecut
 
 ## Reto 2
 
-La segunda fase consistió en la utilización de la librería `<WiFi.h>` para configurar el ESP32 en modo Estación (STA), realizando un escaneo dinámico de los canales de la banda de **2.4 GHz**. Este barrido permitió identificar SSIDs y evaluar la calidad del enlace mediante el indicador RSSI.
+La segunda fase consistió en la utilización de la librería `<WiFi.h>` para configurar el ESP32 en modo Estación (STA), realizando un escaneo dinámico de los canales de la banda de 2.4 GHz. Este barrido permitió identificar SSIDs y evaluar la calidad del enlace mediante el indicador RSSI.
 
 
 El proceso de conexión se gestionó de forma interactiva a través del Monitor Serie, permitiendo que el usuario seleccionara la red deseada y proporcionara las credenciales de acceso de manera dinámica.
@@ -52,5 +52,5 @@ Finalmente, el sistema recuperó y desplegó la dirección IP asignada mediante 
 Los resultados demuestran una alta fiabilidad en la digitalización de la señal analógica, con una respuesta fluida entre el movimiento del potenciómetro y los valores seriales. La estabilidad de la conexión WiFi, con tiempos de asociación rápidos, confirma la robustez del ESP32 como plataforma para estaciones de monitoreo.
 
 * La integración exitosa establece las bases para proyectos de ingeniería de mayor envergadura.
-* La capacidad de capturar datos físicos y contar con conectividad inalámbrica permite proyectar este sistema hacia el envío de métricas a la **nube**.
+* La capacidad de capturar datos físicos y contar con conectividad inalámbrica permite proyectar este sistema hacia el envío de métricas a la nube.
 * Este flujo de trabajo facilita la recolección de información en campo y el análisis de datos masivos para la toma de decisiones en tiempo real.
