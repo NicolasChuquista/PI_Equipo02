@@ -58,8 +58,59 @@ Seleccionamos la red detectada en la lista y escribimos la contraseña manualmen
 <p align="center">
   <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/1 CAP.png" width="400">
   <br>
-  <b>Figura 1: Circuito - Reto 1</b>
+  <b>Figura 3 </b>
 </p>
+Como primer paso esta descargar el archivo .JSON brindado en clase para poder importarlo 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/2 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Luego con el archivo descargado lo importamos en "Node-RED" para visualizar el dashboard del documento.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/3 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Logramso ver que el documento se importo de manera correcta sin errores. 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/4 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Llenamos el apartado de TEMA con el nombre el cual se va identificar y tener presente este nombre ya que se va utililzar mas adelante.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/5 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Damos click en el boton de "instanciar" para poder proseguir con los siguientes pasos.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/6 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Instalamos el programa MQTTX para la comunicacion de datos y completamos con los datos y numeor de host correspondiente.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/7 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Para finalizar usamos el parametro de "temp" de ejemplo para corroborar que el envio de datos sea el correcto. 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/8 CAP.png" width="400">
+  <br>
+  <b>Figura 3 </b>
+</p>
+Finalmente se pude observar el mimso valor colocado en el programa que que da salida al "gauge".
+
+---
 
 ## Conclusiones
 
