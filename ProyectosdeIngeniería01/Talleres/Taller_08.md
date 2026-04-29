@@ -56,7 +56,7 @@ Seleccionamos la red detectada en la lista y escribimos la contraseña manualmen
 ## Reto 3
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/1 CAP.JPG" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/1 CAP.png" width="400">
   <br>
   <b>Figura 1: Circuito - Reto 1</b>
 </p>
