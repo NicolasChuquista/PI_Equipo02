@@ -50,8 +50,8 @@ Seleccionamos la red detectada en la lista y escribimos la contraseña manualmen
 
 ## Conclusiones
 
-Los resultados demuestran una alta fiabilidad en la digitalización de la señal analógica, con una respuesta fluida entre el movimiento del potenciómetro y los valores seriales. La estabilidad de la conexión WiFi, con tiempos de asociación rápidos, confirma la robustez del ESP32 como plataforma para estaciones de monitoreo.
+El desarrollo de este laboratorio permitió validar la eficacia del ESP32 como una unidad central de procesamiento capaz de cerrar la brecha entre el entorno físico y el ecosistema digital.
 
-* La integración exitosa establece las bases para proyectos de ingeniería de mayor envergadura.
-* La capacidad de capturar datos físicos y contar con conectividad inalámbrica permite proyectar este sistema hacia el envío de métricas a la nube.
-* Este flujo de trabajo facilita la recolección de información en campo y el análisis de datos masivos para la toma de decisiones en tiempo real.
+Los resultados demuestran una alta fiabilidad en la digitalización de señales analógicas, donde la resolución del ADC proporcionó una respuesta fluida y coherente entre el desplazamiento mecánico del potenciómetro y los valores reflejados en el terminal. Asimismo, a pesar de los desafíos técnicos iniciales relacionados con la configuración del software y la compatibilidad de hardware entre los equipos, la estabilidad de la conexión WiFi y la rapidez en la asociación de red confirmaron la robustez de la plataforma para operar en entornos de monitoreo dinámicos.
+
+Podemos concluir que la integración exitosa de la captura de datos y la conectividad inalámbrica establece las bases técnicas para proyectos de ingeniería de mayor envergadura. Este flujo de trabajo no solo facilita la recolección de datos en campo de manera autónoma, sino que habilita el análisis de datos masivos en la nube, optimizando la toma de decisiones tecnológicas basadas en evidencias precisas y transmitidas en tiempo real.
