@@ -53,62 +53,81 @@ Seleccionamos la red detectada en la lista y escribimos la contraseña manualmen
 
 ---
 
-## Reto 3
+## Reto 3: Configuración de Dashboard en Node-RED y Comunicación MQTT
+
+A continuación, se detalla el proceso para importar el flujo de trabajo en Node-RED y establecer la comunicación de datos utilizando MQTTX.
+
+### 1. Descarga del archivo de configuración
+Como primer paso, descargamos el archivo `.json` brindado en clase para poder importarlo en nuestro entorno de trabajo. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/1 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/1 CAP.png" width="400" alt="Descarga de archivo JSON">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 1:</b> Archivo JSON listo para descargar.
 </p>
-Como primer paso esta descargar el archivo .JSON brindado en clase para poder importarlo 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/2 CAP.png" width="400">
-  <br>
-  <b>Figura 3 </b>
-</p>
-Luego con el archivo descargado lo importamos en "Node-RED" para visualizar el dashboard del documento.
+
+### 2. Importación en Node-RED
+Con el archivo descargado, lo importamos en **Node-RED** para generar y visualizar el flujo del dashboard.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/3 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/2 CAP.png" width="400" alt="Importación en Node-RED">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 2:</b> Proceso de importación del archivo en la plataforma.
 </p>
-Logramso ver que el documento se importo de manera correcta sin errores. 
+
+### 3. Verificación de la importación
+Logramos observar que el documento se importó de manera correcta y sin errores en el espacio de trabajo.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/4 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/3 CAP.png" width="400" alt="Flujo importado correctamente">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 3:</b> Nodos importados exitosamente en el flujo.
 </p>
-Llenamos el apartado de TEMA con el nombre el cual se va identificar y tener presente este nombre ya que se va utililzar mas adelante.
+
+### 4. Configuración del Topic (Tema)
+Llenamos el apartado de **TEMA** (Topic) con el nombre con el cual se va a identificar la comunicación. Es importante tener presente este nombre, ya que se utilizará más adelante para el envío y recepción de datos.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/5 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/4 CAP.png" width="400" alt="Configuración del Topic">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 4:</b> Asignación del tema MQTT en el nodo.
 </p>
-Damos click en el boton de "instanciar" para poder proseguir con los siguientes pasos.
+
+### 5. Despliegue del flujo
+Damos clic en el botón de **"Deploy"** (Instanciar) en la esquina superior derecha para guardar los cambios y poner en marcha los nodos.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/6 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/5 CAP.png" width="400" alt="Botón Deploy">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 5:</b> Confirmación y despliegue del flujo.
 </p>
-Instalamos el programa MQTTX para la comunicacion de datos y completamos con los datos y numeor de host correspondiente.
+
+### 6. Configuración de MQTTX
+Instalamos y abrimos el programa **MQTTX** para gestionar la comunicación de datos. Completamos la configuración de conexión con las credenciales y el número de puerto (host) correspondiente.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/7 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/6 CAP.png" width="400" alt="Configuración de conexión en MQTTX">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 6:</b> Parámetros de conexión en MQTTX.
 </p>
-Para finalizar usamos el parametro de "temp" de ejemplo para corroborar que el envio de datos sea el correcto. 
+
+### 7. Envío de datos de prueba
+Para probar la conexión, utilizamos el parámetro `temp` (temperatura) como ejemplo para corroborar que el envío de datos sea correcto hacia el tema previamente configurado.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/8 CAP.png" width="400">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/7 CAP.png" width="400" alt="Envío de payload en MQTTX">
   <br>
-  <b>Figura 3 </b>
+  <b>Figura 7:</b> Envío de un valor de prueba desde el cliente MQTT.
 </p>
-Finalmente se pude observar el mimso valor colocado en el programa que que da salida al "gauge".
+
+### 8. Visualización en el Dashboard
+Finalmente, podemos observar en la interfaz de usuario (UI) de Node-RED el mismo valor que enviamos desde MQTTX, reflejado correctamente en el componente gráfico del medidor (*gauge*).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/8 CAP.png" width="400" alt="Visualización en el Dashboard">
+  <br>
+  <b>Figura 8:</b> Lectura de datos exitosa en el Dashboard.
+</p>
 
 ---
 
