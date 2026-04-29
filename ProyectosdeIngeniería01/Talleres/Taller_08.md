@@ -36,14 +36,15 @@ El software se configuró con un bus serie a 115200 baudios. El algoritmo ejecut
 
 ## Reto 2
 
-La segunda fase consistió en la utilización de la librería `<WiFi.h>` para configurar el ESP32 en modo Estación (STA), realizando un escaneo dinámico de los canales de la banda de 2.4 GHz. Este barrido permitió identificar SSIDs y evaluar la calidad del enlace mediante el indicador RSSI.
+La segunda etapa consistió en activar el WiFi del ESP32 para que pudiera conectarse a internet.
 
+Al inicio, la principal dificultad fue localizar e instalar correctamente la librería `<WiFi.h>` dentro del entorno de Arduino, ya que es un componente indispensable para que el código pueda dar instrucciones al chip de radio del microcontrolador. Una vez configurado el modo Estación (STA), el dispositivo comenzó a realizar un escaneo de todas las señales inalámbricas cercanas en la banda de 2.4 GHz.
+
+Durante las pruebas de escaneo, el equipo notó que el ESP32 no detectaba con la misma facilidad todas las redes disponibles. Por ejemplo, aunque los tres integrantes activaron el "Hotspot" de sus celulares, el dispositivo solo lograba identificar la señal de uno de ellos. Esto nos permitió observar cómo factores como la configuración de la banda del celular o la potencia de transmisión influyen directamente en la visibilidad del dispositivo.
 
 El proceso de conexión se gestionó de forma interactiva a través del Monitor Serie, permitiendo que el usuario seleccionara la red deseada y proporcionara las credenciales de acceso de manera dinámica.
 
-El código implementó un algoritmo de espera activa que monitoreaba el registro de estado del chip hasta confirmar la asociación exitosa con el punto de acceso inalámbrico.
-
-Finalmente, el sistema recuperó y desplegó la dirección IP asignada mediante el protocolo DHCP, lo que representa la obtención de una identidad digital dentro de la red, paso indispensable para el despliegue de cualquier sistema de monitoreo remoto o telemetría.
+Seleccionamos la red detectada en la lista y escribimos la contraseña manualmente. Tras ello, observamos cómo el código entraba en una "espera activa" mientras intentaba el enlace. Una vez lograda la conexión, el router nos asignó una dirección IP mediante el protocolo DHCP. Esta "identidad digital" es el paso final que confirma que nuestro ESP32 ya es parte de una red y está listo para enviar datos de sensores a cualquier servidor remoto.
 
 ---
 
