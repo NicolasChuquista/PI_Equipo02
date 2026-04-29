@@ -8,7 +8,20 @@ El presente documento describe el proceso de configuración y validación de un 
 2. Metodología y Procedimiento Experimental: Reto 1
 La fase inicial del laboratorio se centró en la implementación de una interfaz de entrada y salida para la adquisición de datos en tiempo real. Se realizó el montaje físico vinculando un potenciómetro al pin GPIO 34 del ESP32, el cual fue seleccionado por su resolución nativa de 12 bits en el convertidor analógico-digital (ADC). Esta configuración permitió transformar el rango de voltaje de 0V a 3.3V en una escala numérica de 0 a 4095 unidades. En paralelo, se acondicionó un actuador visual mediante un LED conectado al pin GPIO 2 con una resistencia limitadora de 220Ω para garantizar la integridad del componente.
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Taller08_1.JPG" width="250">
+  <br>
+  <b>Figura 1: Circuito - Reto 1</b>
+</p>
+
 En cuanto al desarrollo del software en Arduino IDE, se programó una lógica de control de lazo abierto que utilizaba el bus serie a una velocidad de 115200 baudios. El programa ejecutaba una lectura constante del sensor y, mediante una estructura condicional, activaba el estado lógico del LED al superar un umbral crítico de 2000 unidades. Este procedimiento validó la capacidad del microcontrolador para procesar señales externas y ejecutar acciones de control local de manera inmediata.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NicolasChuquista/PI_Equipo02/refs/heads/main/img/Taller08_2.JPG" width="250">
+  <br>
+  <b>Figura 2: Panel - Reto 1</b>
+</p>
 
 3. Desarrollo de Conectividad Inalámbrica: Reto 2
 La segunda fase consistió en la habilitación del módulo de radiofrecuencia para integrar el dispositivo en una red de área local. Utilizando la librería estándar WiFi.h, se configuró el ESP32 en modo Estación (STA), procediendo inicialmente a un escaneo dinámico de los canales de la banda de 2.4 GHz. Este barrido permitió identificar los SSIDs disponibles y evaluar la calidad del enlace mediante el indicador RSSI (Received Signal Strength Indicator), fundamental para determinar la viabilidad de la transmisión de datos en entornos con interferencia.
