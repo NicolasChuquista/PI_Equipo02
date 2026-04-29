@@ -1,6 +1,11 @@
 # Taller 08: Informe de Laboratorio
 **Fecha:** 28 de abril de 2026  
 **Equipo:** 02
+**Integrantes:**
+- Tomás del Castillo Mogollón
+- Flavio Francisco Rabanal Bravo
+- Nicolás Genaro Chuquista Rivadeneira
+- Raul Enrique Jauregui Penny
 
 ---
 
